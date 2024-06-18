@@ -230,10 +230,14 @@ PLC_Signpost:
 ; with a "align $10000"
 ; -------------------------------------------------------------------------
 
+	if ROMHACK=0
 	if REGION=USA
 	incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Bad Future, U).bin"
 	else
 	incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Bad Future, JE).bin"
+	endif
+	else
+	align $10000
 	endif
 
 ; -------------------------------------------------------------------------
@@ -350,10 +354,14 @@ Art_TunnelDoorSplash:
 ; with a "align $20000"
 ; -------------------------------------------------------------------------
 
+	if ROMHACK=0
 	if REGION=USA
 	incbin	"Level/Palmtree Panic/Data/Padding/2 (Act 1 Bad Future, U).bin"
 	else
 	incbin	"Level/Palmtree Panic/Data/Padding/2 (Act 1 Bad Future, JE).bin"
+	endif
+	else
+	align $20000
 	endif
 
 ; -------------------------------------------------------------------------
@@ -543,6 +551,10 @@ Art_Projector:
 ; with a "align $40000"
 ; -------------------------------------------------------------------------
 
+	if ROMHACK=0
 	incbin	"Level/Palmtree Panic/Data/Padding/3 (Act 1 Bad Future).bin"
+	else
+	align $40000
+	endif
 
 ; -------------------------------------------------------------------------

@@ -248,6 +248,7 @@ PLC_Signpost:
 ; with a "align $10000"
 ; -------------------------------------------------------------------------
 
+	if ROMHACK=0
 	if DEMO=0
 		if REGION=USA
 		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present, U).bin"
@@ -260,6 +261,9 @@ PLC_Signpost:
 		else
 		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present Demo, JE).bin"
 		endif
+	endif
+	else
+	align $10000
 	endif
 
 ; -------------------------------------------------------------------------
@@ -570,6 +574,10 @@ Ani_AmyRose:
 ; with a "align $40000"
 ; -------------------------------------------------------------------------
 
+	if ROMHACK=0
 	incbin	"Level/Palmtree Panic/Data/Padding/2 (Act 1 Present).bin"
+	else
+	align $40000
+	endif
 
 ; -------------------------------------------------------------------------
