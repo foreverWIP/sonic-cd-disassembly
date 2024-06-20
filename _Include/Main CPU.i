@@ -14,7 +14,7 @@ MAINCPU		EQU	1
 ; Cartridge
 CARTRIDGE	EQU	$400000			; Cartridge start
 CARTRIDGEE	EQU	$800000			; Cartridge end
-CARTRIDGES	EQU	CARTRIDGEE-CARTRIDGE	; Cartridge size
+CARTRIDGES	EQU	CARTRIDGEE-CARTRIDGES	; Cartridge size
 CARTID		EQU	CARTRIDGE+$000001	; RAM cartridge ID
 CARTDATA	EQU	CARTRIDGE+$200001	; RAM cartridge data
 CARTDATAE	EQU	CARTRIDGE+$300000	; RAM cartridge data end
@@ -54,7 +54,7 @@ VDPHVCNT	EQU	$C00008			; VDP H/V counter
 VDPDEBUG	EQU	$C0001C			; VDP debug register
 
 ; I/O
-REG_VERSION		EQU	$A10001			; Hardware version
+VERSION		EQU	$A10001			; Hardware version
 IODATA1		EQU	$A10003			; I/O port 1 data port
 IODATA2		EQU	$A10005			; I/O port 2 data port
 IODATA3		EQU	$A10007			; I/O port 3 data port
@@ -86,7 +86,7 @@ WORDRAM2ME	EQU	EXPANSION+$240000	; MCD Word RAM end (2M)
 WORDRAM2MS	EQU	WORDRAM2ME-WORDRAM2M	; MCD Word RAM size (2M)
 WORDRAMIMG	EQU	EXPANSION+$220000	; MCD VRAM image of Word RAM start (1M/1M)
 WORDRAMIMGE	EQU	EXPANSION+$240000	; MCD VRAM image of Word RAM end (1M/1M)
-WORDRAMIMGS	EQU	WORDRAMIMGE-WORDRAM1M	; MCD VRAM image of Word RAM size (1M/1M)
+WORDRAMIMGS	EQU	WORDRAMIMGE-WORDRAMIMGS	; MCD VRAM image of Word RAM size (1M/1M)
 SUBWORDRAM2M	EQU	$080000			; MCD Sub CPU address for Word RAM (2M)
 SUBWORDRAM1M	EQU	$0C0000			; MCD Sub CPU address for Word RAM (1M/1M)
 
@@ -202,440 +202,78 @@ SPRITECNT	EQU	$50			; Nunber of sprites
 ; Palette line structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-	; RSRPT.W	palCol, PALLNCOLORS, 1		; Palette entries
-; PALLINESZ	rs.b	0			; Structure size
-palCol0 = 0
-palCol1 = 1
-palCol2 = 2
-palCol3 = 3
-palCol4 = 4
-palCol5 = 5
-palCol6 = 6
-palCol7 = 7
-palCol8 = 8
-palCol9 = 9
-palCol10 = 10
-palCol11 = 11
-palCol12 = 12
-palCol13 = 13
-palCol14 = 14
-palCol15 = 15
-PALLINESZ = 16
+	rsreset
+	RSRPT.W	palCol, PALLNCOLORS, 1		; Palette entries
+PALLINESZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Palette structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-	; RSRPT.B	palLn, PALLINES, PALLINESZ	; Palette lines
-; PALETTESZ	rs.b	0			; Structure size
-palLn0 = 0
-palLn1 = 32
-palLn2 = 64
-palLn3 = 96
-PALETTESZ = 128
+	rsreset
+	RSRPT.B	palLn, PALLINES, PALLINESZ	; Palette lines
+PALETTESZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Scroll entry structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-; scrlFG		rs.w	1			; Foreground entry
-; scrlBG		rs.w	1			; Background entry
-; SCRLENTRYSZ	rs.b	0			; Structure size
-scrlFG = 0
-scrlBG = 2
-SCRLENTRYSZ = 4
+	rsreset
+scrlFG		rs.w	1			; Foreground entry
+scrlBG		rs.w	1			; Background entry
+SCRLENTRYSZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Vertical scroll structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-	; RSRPT.B	vscrl, VSCRLCNT, SCRLENTRYSZ	; Scroll entries
-; VSCROLLSZ	rs.b	0			; Structure size
-vscrl0 = 0
-vscrl1 = 4
-vscrl2 = 8
-vscrl3 = 12
-vscrl4 = 16
-vscrl5 = 20
-vscrl6 = 24
-vscrl7 = 28
-vscrl8 = 32
-vscrl9 = 36
-vscrl10 = 40
-vscrl11 = 44
-vscrl12 = 48
-vscrl13 = 52
-vscrl14 = 56
-vscrl15 = 64
-vscrl16 = 68
-vscrl17 = 72
-vscrl18 = 76
-vscrl19 = 80
-VSCROLLSZ = 84
+	rsreset
+	RSRPT.B	vscrl, VSCRLCNT, SCRLENTRYSZ	; Scroll entries
+VSCROLLSZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Horizontal scroll structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-	; RSRPT.B	hscrl, HSCRLCNT, SCRLENTRYSZ	; Scroll entries
-; HSCROLLSZ	rs.b	0			; Structure size
-hscrl0 = 0*SCRLENTRYSZ
-hscrl1 = 1*SCRLENTRYSZ
-hscrl2 = 2*SCRLENTRYSZ
-hscrl3 = 3*SCRLENTRYSZ
-hscrl4 = 4*SCRLENTRYSZ
-hscrl5 = 5*SCRLENTRYSZ
-hscrl6 = 6*SCRLENTRYSZ
-hscrl7 = 7*SCRLENTRYSZ
-hscrl8 = 8*SCRLENTRYSZ
-hscrl9 = 9*SCRLENTRYSZ
-hscrl10 = 10*SCRLENTRYSZ
-hscrl11 = 11*SCRLENTRYSZ
-hscrl12 = 12*SCRLENTRYSZ
-hscrl13 = 13*SCRLENTRYSZ
-hscrl14 = 14*SCRLENTRYSZ
-hscrl15 = 15*SCRLENTRYSZ
-hscrl16 = 16*SCRLENTRYSZ
-hscrl17 = 17*SCRLENTRYSZ
-hscrl18 = 18*SCRLENTRYSZ
-hscrl19 = 19*SCRLENTRYSZ
-hscrl20 = 20*SCRLENTRYSZ
-hscrl21 = 21*SCRLENTRYSZ
-hscrl22 = 22*SCRLENTRYSZ
-hscrl23 = 23*SCRLENTRYSZ
-hscrl24 = 24*SCRLENTRYSZ
-hscrl25 = 25*SCRLENTRYSZ
-hscrl26 = 26*SCRLENTRYSZ
-hscrl27 = 27*SCRLENTRYSZ
-hscrl28 = 28*SCRLENTRYSZ
-hscrl29 = 29*SCRLENTRYSZ
-hscrl30 = 30*SCRLENTRYSZ
-hscrl31 = 31*SCRLENTRYSZ
-hscrl32 = 32*SCRLENTRYSZ
-hscrl33 = 33*SCRLENTRYSZ
-hscrl34 = 34*SCRLENTRYSZ
-hscrl35 = 35*SCRLENTRYSZ
-hscrl36 = 36*SCRLENTRYSZ
-hscrl37 = 37*SCRLENTRYSZ
-hscrl38 = 38*SCRLENTRYSZ
-hscrl39 = 39*SCRLENTRYSZ
-hscrl40 = 40*SCRLENTRYSZ
-hscrl41 = 41*SCRLENTRYSZ
-hscrl42 = 42*SCRLENTRYSZ
-hscrl43 = 43*SCRLENTRYSZ
-hscrl44 = 44*SCRLENTRYSZ
-hscrl45 = 45*SCRLENTRYSZ
-hscrl46 = 46*SCRLENTRYSZ
-hscrl47 = 47*SCRLENTRYSZ
-hscrl48 = 48*SCRLENTRYSZ
-hscrl49 = 49*SCRLENTRYSZ
-hscrl50 = 50*SCRLENTRYSZ
-hscrl51 = 51*SCRLENTRYSZ
-hscrl52 = 52*SCRLENTRYSZ
-hscrl53 = 53*SCRLENTRYSZ
-hscrl54 = 54*SCRLENTRYSZ
-hscrl55 = 55*SCRLENTRYSZ
-hscrl56 = 56*SCRLENTRYSZ
-hscrl57 = 57*SCRLENTRYSZ
-hscrl58 = 58*SCRLENTRYSZ
-hscrl59 = 59*SCRLENTRYSZ
-hscrl60 = 60*SCRLENTRYSZ
-hscrl61 = 61*SCRLENTRYSZ
-hscrl62 = 62*SCRLENTRYSZ
-hscrl63 = 63*SCRLENTRYSZ
-hscrl64 = 64*SCRLENTRYSZ
-hscrl65 = 65*SCRLENTRYSZ
-hscrl66 = 66*SCRLENTRYSZ
-hscrl67 = 67*SCRLENTRYSZ
-hscrl68 = 68*SCRLENTRYSZ
-hscrl69 = 69*SCRLENTRYSZ
-hscrl70 = 70*SCRLENTRYSZ
-hscrl71 = 71*SCRLENTRYSZ
-hscrl72 = 72*SCRLENTRYSZ
-hscrl73 = 73*SCRLENTRYSZ
-hscrl74 = 74*SCRLENTRYSZ
-hscrl75 = 75*SCRLENTRYSZ
-hscrl76 = 76*SCRLENTRYSZ
-hscrl77 = 77*SCRLENTRYSZ
-hscrl78 = 78*SCRLENTRYSZ
-hscrl79 = 79*SCRLENTRYSZ
-hscrl80 = 80*SCRLENTRYSZ
-hscrl81 = 81*SCRLENTRYSZ
-hscrl82 = 82*SCRLENTRYSZ
-hscrl83 = 83*SCRLENTRYSZ
-hscrl84 = 84*SCRLENTRYSZ
-hscrl85 = 85*SCRLENTRYSZ
-hscrl86 = 86*SCRLENTRYSZ
-hscrl87 = 87*SCRLENTRYSZ
-hscrl88 = 88*SCRLENTRYSZ
-hscrl89 = 89*SCRLENTRYSZ
-hscrl90 = 90*SCRLENTRYSZ
-hscrl91 = 91*SCRLENTRYSZ
-hscrl92 = 92*SCRLENTRYSZ
-hscrl93 = 93*SCRLENTRYSZ
-hscrl94 = 94*SCRLENTRYSZ
-hscrl95 = 95*SCRLENTRYSZ
-hscrl96 = 96*SCRLENTRYSZ
-hscrl97 = 97*SCRLENTRYSZ
-hscrl98 = 98*SCRLENTRYSZ
-hscrl99 = 99*SCRLENTRYSZ
-hscrl100 = 100*SCRLENTRYSZ
-hscrl101 = 101*SCRLENTRYSZ
-hscrl102 = 102*SCRLENTRYSZ
-hscrl103 = 103*SCRLENTRYSZ
-hscrl104 = 104*SCRLENTRYSZ
-hscrl105 = 105*SCRLENTRYSZ
-hscrl106 = 106*SCRLENTRYSZ
-hscrl107 = 107*SCRLENTRYSZ
-hscrl108 = 108*SCRLENTRYSZ
-hscrl109 = 109*SCRLENTRYSZ
-hscrl110 = 110*SCRLENTRYSZ
-hscrl111 = 111*SCRLENTRYSZ
-hscrl112 = 112*SCRLENTRYSZ
-hscrl113 = 113*SCRLENTRYSZ
-hscrl114 = 114*SCRLENTRYSZ
-hscrl115 = 115*SCRLENTRYSZ
-hscrl116 = 116*SCRLENTRYSZ
-hscrl117 = 117*SCRLENTRYSZ
-hscrl118 = 118*SCRLENTRYSZ
-hscrl119 = 119*SCRLENTRYSZ
-hscrl120 = 120*SCRLENTRYSZ
-hscrl121 = 121*SCRLENTRYSZ
-hscrl122 = 122*SCRLENTRYSZ
-hscrl123 = 123*SCRLENTRYSZ
-hscrl124 = 124*SCRLENTRYSZ
-hscrl125 = 125*SCRLENTRYSZ
-hscrl126 = 126*SCRLENTRYSZ
-hscrl127 = 127*SCRLENTRYSZ
-hscrl128 = 128*SCRLENTRYSZ
-hscrl129 = 129*SCRLENTRYSZ
-hscrl130 = 130*SCRLENTRYSZ
-hscrl131 = 131*SCRLENTRYSZ
-hscrl132 = 132*SCRLENTRYSZ
-hscrl133 = 133*SCRLENTRYSZ
-hscrl134 = 134*SCRLENTRYSZ
-hscrl135 = 135*SCRLENTRYSZ
-hscrl136 = 136*SCRLENTRYSZ
-hscrl137 = 137*SCRLENTRYSZ
-hscrl138 = 138*SCRLENTRYSZ
-hscrl139 = 139*SCRLENTRYSZ
-hscrl140 = 140*SCRLENTRYSZ
-hscrl141 = 141*SCRLENTRYSZ
-hscrl142 = 142*SCRLENTRYSZ
-hscrl143 = 143*SCRLENTRYSZ
-hscrl144 = 144*SCRLENTRYSZ
-hscrl145 = 145*SCRLENTRYSZ
-hscrl146 = 146*SCRLENTRYSZ
-hscrl147 = 147*SCRLENTRYSZ
-hscrl148 = 148*SCRLENTRYSZ
-hscrl149 = 149*SCRLENTRYSZ
-hscrl150 = 150*SCRLENTRYSZ
-hscrl151 = 151*SCRLENTRYSZ
-hscrl152 = 152*SCRLENTRYSZ
-hscrl153 = 153*SCRLENTRYSZ
-hscrl154 = 154*SCRLENTRYSZ
-hscrl155 = 155*SCRLENTRYSZ
-hscrl156 = 156*SCRLENTRYSZ
-hscrl157 = 157*SCRLENTRYSZ
-hscrl158 = 158*SCRLENTRYSZ
-hscrl159 = 159*SCRLENTRYSZ
-hscrl160 = 160*SCRLENTRYSZ
-hscrl161 = 161*SCRLENTRYSZ
-hscrl162 = 162*SCRLENTRYSZ
-hscrl163 = 163*SCRLENTRYSZ
-hscrl164 = 164*SCRLENTRYSZ
-hscrl165 = 165*SCRLENTRYSZ
-hscrl166 = 166*SCRLENTRYSZ
-hscrl167 = 167*SCRLENTRYSZ
-hscrl168 = 168*SCRLENTRYSZ
-hscrl169 = 169*SCRLENTRYSZ
-hscrl170 = 170*SCRLENTRYSZ
-hscrl171 = 171*SCRLENTRYSZ
-hscrl172 = 172*SCRLENTRYSZ
-hscrl173 = 173*SCRLENTRYSZ
-hscrl174 = 174*SCRLENTRYSZ
-hscrl175 = 175*SCRLENTRYSZ
-hscrl176 = 176*SCRLENTRYSZ
-hscrl177 = 177*SCRLENTRYSZ
-hscrl178 = 178*SCRLENTRYSZ
-hscrl179 = 179*SCRLENTRYSZ
-hscrl180 = 180*SCRLENTRYSZ
-hscrl181 = 181*SCRLENTRYSZ
-hscrl182 = 182*SCRLENTRYSZ
-hscrl183 = 183*SCRLENTRYSZ
-hscrl184 = 184*SCRLENTRYSZ
-hscrl185 = 185*SCRLENTRYSZ
-hscrl186 = 186*SCRLENTRYSZ
-hscrl187 = 187*SCRLENTRYSZ
-hscrl188 = 188*SCRLENTRYSZ
-hscrl189 = 189*SCRLENTRYSZ
-hscrl190 = 190*SCRLENTRYSZ
-hscrl191 = 191*SCRLENTRYSZ
-hscrl192 = 192*SCRLENTRYSZ
-hscrl193 = 193*SCRLENTRYSZ
-hscrl194 = 194*SCRLENTRYSZ
-hscrl195 = 195*SCRLENTRYSZ
-hscrl196 = 196*SCRLENTRYSZ
-hscrl197 = 197*SCRLENTRYSZ
-hscrl198 = 198*SCRLENTRYSZ
-hscrl199 = 199*SCRLENTRYSZ
-hscrl200 = 200*SCRLENTRYSZ
-hscrl201 = 201*SCRLENTRYSZ
-hscrl202 = 202*SCRLENTRYSZ
-hscrl203 = 203*SCRLENTRYSZ
-hscrl204 = 204*SCRLENTRYSZ
-hscrl205 = 205*SCRLENTRYSZ
-hscrl206 = 206*SCRLENTRYSZ
-hscrl207 = 207*SCRLENTRYSZ
-hscrl208 = 208*SCRLENTRYSZ
-hscrl209 = 209*SCRLENTRYSZ
-hscrl210 = 210*SCRLENTRYSZ
-hscrl211 = 211*SCRLENTRYSZ
-hscrl212 = 212*SCRLENTRYSZ
-hscrl213 = 213*SCRLENTRYSZ
-hscrl214 = 214*SCRLENTRYSZ
-hscrl215 = 215*SCRLENTRYSZ
-hscrl216 = 216*SCRLENTRYSZ
-hscrl217 = 217*SCRLENTRYSZ
-hscrl218 = 218*SCRLENTRYSZ
-hscrl219 = 219*SCRLENTRYSZ
-hscrl220 = 220*SCRLENTRYSZ
-hscrl221 = 221*SCRLENTRYSZ
-hscrl222 = 222*SCRLENTRYSZ
-hscrl223 = 223*SCRLENTRYSZ
-HSCROLLSZ = 224*SCRLENTRYSZ
+	rsreset
+	RSRPT.B	hscrl, HSCRLCNT, SCRLENTRYSZ	; Scroll entries
+HSCROLLSZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Sprite table entry structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-; sprY		rs.w	1			; Y position
-; sprSize		rs.b	1			; Sprite size
-; sprLink		rs.b	1			; Link data
-; sprTile		rs.w	1			; Tile attributes
-; sprX		rs.w	1			; X position
-; SPRENTRYSZ	rs.b	0			; Structure size
-sprY = 0
-sprSize = 2
-sprLink = 3
-sprTile = 4
-sprX = 6
-SPRENTRYSZ = 8
+	rsreset
+sprY		rs.w	1			; Y position
+sprSize		rs.b	1			; Sprite size
+sprLink		rs.b	1			; Link data
+sprTile		rs.w	1			; Tile attributes
+sprX		rs.w	1			; X position
+SPRENTRYSZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Sprite table structure
 ; -------------------------------------------------------------------------
 
-	; rsreset
-	; RSRPT.B	spr, SPRITECNT, SPRENTRYSZ	; Sprite entries
-; SPRTABLESZ	rs.b	0			; Structure size
-spr0 = 0*SPRENTRYSZ
-spr1 = 1*SPRENTRYSZ
-spr2 = 2*SPRENTRYSZ
-spr3 = 3*SPRENTRYSZ
-spr4 = 4*SPRENTRYSZ
-spr5 = 5*SPRENTRYSZ
-spr6 = 6*SPRENTRYSZ
-spr7 = 7*SPRENTRYSZ
-spr8 = 8*SPRENTRYSZ
-spr9 = 9*SPRENTRYSZ
-spr10 = 10*SPRENTRYSZ
-spr11 = 11*SPRENTRYSZ
-spr12 = 12*SPRENTRYSZ
-spr13 = 13*SPRENTRYSZ
-spr14 = 14*SPRENTRYSZ
-spr15 = 15*SPRENTRYSZ
-spr16 = 16*SPRENTRYSZ
-spr17 = 17*SPRENTRYSZ
-spr18 = 18*SPRENTRYSZ
-spr19 = 19*SPRENTRYSZ
-spr20 = 20*SPRENTRYSZ
-spr21 = 21*SPRENTRYSZ
-spr22 = 22*SPRENTRYSZ
-spr23 = 23*SPRENTRYSZ
-spr24 = 24*SPRENTRYSZ
-spr25 = 25*SPRENTRYSZ
-spr26 = 26*SPRENTRYSZ
-spr27 = 27*SPRENTRYSZ
-spr28 = 28*SPRENTRYSZ
-spr29 = 29*SPRENTRYSZ
-spr30 = 30*SPRENTRYSZ
-spr31 = 31*SPRENTRYSZ
-spr32 = 32*SPRENTRYSZ
-spr33 = 33*SPRENTRYSZ
-spr34 = 34*SPRENTRYSZ
-spr35 = 35*SPRENTRYSZ
-spr36 = 36*SPRENTRYSZ
-spr37 = 37*SPRENTRYSZ
-spr38 = 38*SPRENTRYSZ
-spr39 = 39*SPRENTRYSZ
-spr40 = 40*SPRENTRYSZ
-spr41 = 41*SPRENTRYSZ
-spr42 = 42*SPRENTRYSZ
-spr43 = 43*SPRENTRYSZ
-spr44 = 44*SPRENTRYSZ
-spr45 = 45*SPRENTRYSZ
-spr46 = 46*SPRENTRYSZ
-spr47 = 47*SPRENTRYSZ
-spr48 = 48*SPRENTRYSZ
-spr49 = 49*SPRENTRYSZ
-spr50 = 50*SPRENTRYSZ
-spr51 = 51*SPRENTRYSZ
-spr52 = 52*SPRENTRYSZ
-spr53 = 53*SPRENTRYSZ
-spr54 = 54*SPRENTRYSZ
-spr55 = 55*SPRENTRYSZ
-spr56 = 56*SPRENTRYSZ
-spr57 = 57*SPRENTRYSZ
-spr58 = 58*SPRENTRYSZ
-spr59 = 59*SPRENTRYSZ
-spr60 = 60*SPRENTRYSZ
-spr61 = 61*SPRENTRYSZ
-spr62 = 62*SPRENTRYSZ
-spr63 = 63*SPRENTRYSZ
-spr64 = 64*SPRENTRYSZ
-spr65 = 65*SPRENTRYSZ
-spr66 = 66*SPRENTRYSZ
-spr67 = 67*SPRENTRYSZ
-spr68 = 68*SPRENTRYSZ
-spr69 = 69*SPRENTRYSZ
-spr70 = 70*SPRENTRYSZ
-spr71 = 71*SPRENTRYSZ
-spr72 = 72*SPRENTRYSZ
-spr73 = 73*SPRENTRYSZ
-spr74 = 74*SPRENTRYSZ
-spr75 = 75*SPRENTRYSZ
-spr76 = 76*SPRENTRYSZ
-spr77 = 77*SPRENTRYSZ
-spr78 = 78*SPRENTRYSZ
-spr79 = 79*SPRENTRYSZ
-SPRTABLESZ = 80*SPRENTRYSZ
+	rsreset
+	RSRPT.B	spr, SPRITECNT, SPRENTRYSZ	; Sprite entries
+SPRTABLESZ	rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; YM2612 register bank structure
 ; -------------------------------------------------------------------------
 	
-	; rsreset
-; ymAddr		rs.b	1			; Address
-; ymData		rs.b	1			; Data
-; YMREGSZ		rs.b	0			; Structure size
-ymAddr = 0
-ymData = 1
-YMREGSZ = 2
+	rsreset
+ymAddr		rs.b	1			; Address
+ymData		rs.b	1			; Data
+YMREGSZ		rs.b	0			; Structure size
 
 ; -------------------------------------------------------------------------
 ; Request Z80 bus access
 ; -------------------------------------------------------------------------
 
-Z80REQ macro
+Z80REQ macros
 	move.w	#$100,Z80BUS			; Request Z80 bus access
-	endm
 
 ; -------------------------------------------------------------------------
 ; Wait for Z80 bus request acknowledgement
@@ -660,9 +298,8 @@ Z80STOP macro
 ; Release the Z80 bus
 ; -------------------------------------------------------------------------
 
-Z80START macro
+Z80START macros
 	move.w	#0,Z80BUS			; Release the bus
-	endm
 
 ; -------------------------------------------------------------------------
 ; Request Z80 reset
@@ -677,9 +314,8 @@ Z80RESON macro
 ; Cancel Z80 reset
 ; -------------------------------------------------------------------------
 
-Z80RESOFF macro
+Z80RESOFF macros
 	move.w	#$100,Z80RESET			; Cancel Z80 reset
-	endm
 
 ; -------------------------------------------------------------------------
 ; Wait for DMA to finish

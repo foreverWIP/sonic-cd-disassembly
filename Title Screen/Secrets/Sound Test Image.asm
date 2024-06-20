@@ -145,44 +145,44 @@ VDPRegsEnd:
 
 Pal_EasterEgg:
 	if EASTEREGG=0
-		binclude	"Title Screen/Secrets/Data/Fun Is Infinite Palette.bin"
+		incbin	"Title Screen/Secrets/Data/Fun Is Infinite Palette.bin"
 	elseif EASTEREGG=1
-		binclude	"Title Screen/Secrets/Data/M.C. Sonic Palette.bin"
+		incbin	"Title Screen/Secrets/Data/M.C. Sonic Palette.bin"
 	elseif EASTEREGG=2
-		binclude	"Title Screen/Secrets/Data/Tails Palette.bin"
+		incbin	"Title Screen/Secrets/Data/Tails Palette.bin"
 	elseif EASTEREGG=3
-		binclude	"Title Screen/Secrets/Data/Batman Palette.bin"
+		incbin	"Title Screen/Secrets/Data/Batman Palette.bin"
 	elseif EASTEREGG=4
-		binclude	"Title Screen/Secrets/Data/Cute Sonic Palette.bin"
+		incbin	"Title Screen/Secrets/Data/Cute Sonic Palette.bin"
 	endif
 Pal_EasterEgg_End:
 	even
 
 Art_EasterEgg:
 	if EASTEREGG=0
-		binclude	"Title Screen/Secrets/Data/Fun Is Infinite Art.nem"
+		incbin	"Title Screen/Secrets/Data/Fun Is Infinite Art.nem"
 	elseif EASTEREGG=1
-		binclude	"Title Screen/Secrets/Data/M.C. Sonic Art.nem"
+		incbin	"Title Screen/Secrets/Data/M.C. Sonic Art.nem"
 	elseif EASTEREGG=2
-		binclude	"Title Screen/Secrets/Data/Tails Art.nem"
+		incbin	"Title Screen/Secrets/Data/Tails Art.nem"
 	elseif EASTEREGG=3
-		binclude	"Title Screen/Secrets/Data/Batman Art.nem"
+		incbin	"Title Screen/Secrets/Data/Batman Art.nem"
 	elseif EASTEREGG=4
-		binclude	"Title Screen/Secrets/Data/Cute Sonic Art.nem"
+		incbin	"Title Screen/Secrets/Data/Cute Sonic Art.nem"
 	endif
 	even
 
 Map_EasterEgg:
 	if EASTEREGG=0
-		binclude	"Title Screen/Secrets/Data/Fun Is Infinite Mappings.bin"
+		incbin	"Title Screen/Secrets/Data/Fun Is Infinite Mappings.bin"
 	elseif EASTEREGG=1
-		binclude	"Title Screen/Secrets/Data/M.C. Sonic Mappings.bin"
+		incbin	"Title Screen/Secrets/Data/M.C. Sonic Mappings.bin"
 	elseif EASTEREGG=2
-		binclude	"Title Screen/Secrets/Data/Tails Mappings.bin"
+		incbin	"Title Screen/Secrets/Data/Tails Mappings.bin"
 	elseif EASTEREGG=3
-		binclude	"Title Screen/Secrets/Data/Batman Mappings.bin"
+		incbin	"Title Screen/Secrets/Data/Batman Mappings.bin"
 	elseif EASTEREGG=4
-		binclude	"Title Screen/Secrets/Data/Cute Sonic Mappings.bin"
+		incbin	"Title Screen/Secrets/Data/Cute Sonic Mappings.bin"
 	endif
 	even
 	

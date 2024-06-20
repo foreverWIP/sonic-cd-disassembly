@@ -913,16 +913,16 @@ VDPRegsEnd:
 	even
 
 Pal_SelScreen:
-	binclude	"Title Screen/Secrets/Data/Palette.bin"
+	incbin	"Title Screen/Secrets/Data/Palette.bin"
 Pal_SelScreen_End:
 	even
 
 Art_SelScreen:
-	binclude	"Title Screen/Secrets/Data/Art.nem"
+	incbin	"Title Screen/Secrets/Data/Art.nem"
 	even
 
 Map_SelScreenBg:
-	binclude	"Title Screen/Secrets/Data/Background Mappings (H40).bin"
+	incbin	"Title Screen/Secrets/Data/Background Mappings (H40).bin"
 	even
 	
 ; -------------------------------------------------------------------------

@@ -132,7 +132,7 @@ VDPRegsEnd:
 ; -------------------------------------------------------------------------
 
 FMSFXDriver:
-	binclude	"_Built/Misc/FM Sound Driver.bin"
+	incbin	"_Built/Misc/FM Sound Driver.bin"
 FMSFXDriverEnd:
 	even
 

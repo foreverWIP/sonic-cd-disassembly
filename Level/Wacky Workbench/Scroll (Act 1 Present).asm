@@ -138,7 +138,7 @@ LevelSizeLoad_StartPos:
 ; -------------------------------------------------------------------------
 
 LevelStartLoc:
-	binclude	"Level/Wacky Workbench/Data/Start Position (Act 1 Present).bin"
+	incbin	"Level/Wacky Workbench/Data/Start Position (Act 1 Present).bin"
 
 ; -------------------------------------------------------------------------
 ; Special chunk IDs

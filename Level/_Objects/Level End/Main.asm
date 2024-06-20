@@ -787,7 +787,7 @@ LoadCapsulePal:
 ; -------------------------------------------------------------------------
 
 Pal_FlowerCapsule:
-	binclude	"Level/_Objects/Level End/Data/Palette (Flower Capsule).bin"
+	incbin	"Level/_Objects/Level End/Data/Palette (Flower Capsule).bin"
 	even
 Ani_BigRingFlash:
 	include	"Level/_Objects/Level End/Data/Animations (Big Ring Flash).asm"
@@ -796,7 +796,7 @@ MapSpr_BigRingFlash:
 	include	"Level/_Objects/Level End/Data/Mappings (Big Ring Flash).asm"
 	even
 Art_BigRingFlash:
-	binclude	"Level/_Objects/Level End/Data/Art (Big Ring Flash).nem"
+	incbin	"Level/_Objects/Level End/Data/Art (Big Ring Flash).nem"
 	even
 
 ; -------------------------------------------------------------------------

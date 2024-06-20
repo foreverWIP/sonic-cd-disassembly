@@ -9,360 +9,360 @@
 ; File IDs
 ; -------------------------------------------------------------------------
 
-	; rsreset
-FID_R11A	= 0			; Palmtree Panic Act 1 Present
-FID_R11B	= 1			; Palmtree Panic Act 1 Past
-FID_R11C	= 2			; Palmtree Panic Act 1 Good Future
-FID_R11D	= 3			; Palmtree Panic Act 1 Bad Future
-FID_MDINIT	= 4			; Mega Drive initialization
-FID_SNDTEST	= 5			; Sound test
-FID_STAGESEL	= 6			; Stage select
-FID_R12A	= 7			; Palmtree Panic Act 2 Present
-FID_R12B	= 8			; Palmtree Panic Act 2 Past
-FID_R12C	= 9			; Palmtree Panic Act 2 Good Future
-FID_R12D	= 10			; Palmtree Panic Act 2 Bad Future
-FID_TITLEMAIN	= 11			; Title screen (Main CPU)
-FID_TITLESUB	= 12			; Title screen (Sub CPU)
-FID_WARP	= 13			; Warp sequence
-FID_TIMEATKMAIN	= 14			; Time attack menu (Main CPU)
-FID_TIMEATKSUB	= 15			; Time attack menu (Sub CPU)
-FID_IPX		= 16			; Main program
-FID_PENCILSTM	= 17			; Pencil test FMV data
-FID_OPENSTM	= 18			; Opening FMV data
-FID_BADENDSTM	= 19			; Bad ending FMV data
-FID_GOODENDSTM	= 20			; Good ending FMV data
-FID_OPENMAIN	= 21			; Opening FMV (Main CPU)
-FID_OPENSUB	= 22			; Opening FMV (Sub CPU)
-FID_COMINSOON	= 23			; "Comin' Soon" screen
-FID_DAGARDMAIN	= 24			; D.A. Garden (Main CPU)
-FID_DAGARDSUB	= 25			; D.A. Garden (Sub CPU)
-FID_R31A	= 26			; Collision Chaos Act 1 Present
-FID_R31B	= 27			; Collision Chaos Act 1 Past
-FID_R31C	= 28			; Collision Chaos Act 1 Good Future
-FID_R31D	= 29			; Collision Chaos Act 1 Bad Future
-FID_R32A	= 30			; Collision Chaos Act 2 Present 
-FID_R32B	= 31			; Collision Chaos Act 2 Past 
-FID_R32C	= 32			; Collision Chaos Act 2 Good Future 
-FID_R32D	= 33			; Collision Chaos Act 2 Bad Future 
-FID_R33C	= 34			; Collision Chaos Act 3 Good Future 
-FID_R33D	= 35			; Collision Chaos Act 3 Bad Future 
-FID_R13C	= 36			; Palmtree Panic Act 3 Good Future
-FID_R13D	= 37			; Palmtree Panic Act 3 Bad Future 
-FID_R41A	= 38			; Tidal Tempest Act 1 Present
-FID_R41B	= 39			; Tidal Tempest Act 1 Past
-FID_R41C	= 40			; Tidal Tempest Act 1 Good Future
-FID_R41D	= 41			; Tidal Tempest Act 1 Bad Future
-FID_R42A	= 42			; Tidal Tempest Act 2 Present 
-FID_R42B	= 43			; Tidal Tempest Act 2 Past 
-FID_R42C	= 44			; Tidal Tempest Act 2 Good Future 
-FID_R42D	= 45			; Tidal Tempest Act 2 Bad Future 
-FID_R43C	= 46			; Tidal Tempest Act 3 Good Future 
-FID_R43D	= 47			; Tidal Tempest Act 3 Bad Future 
-FID_R51A	= 48			; Quartz Quadrant Act 1 Present
-FID_R51B	= 49			; Quartz Quadrant Act 1 Past
-FID_R51C	= 50			; Quartz Quadrant Act 1 Good Future
-FID_R51D	= 51			; Quartz Quadrant Act 1 Bad Future
-FID_R52A	= 52			; Quartz Quadrant Act 2 Present 
-FID_R52B	= 53			; Quartz Quadrant Act 2 Past 
-FID_R52C	= 54			; Quartz Quadrant Act 2 Good Future 
-FID_R52D	= 55			; Quartz Quadrant Act 2 Bad Future 
-FID_R53C	= 56			; Quartz Quadrant Act 3 Good Future 
-FID_R53D	= 57			; Quartz Quadrant Act 3 Bad Future 
-FID_R61A	= 58			; Wacky Workbench Act 1 Present
-FID_R61B	= 59			; Wacky Workbench Act 1 Past
-FID_R61C	= 60			; Wacky Workbench Act 1 Good Future
-FID_R61D	= 61			; Wacky Workbench Act 1 Bad Future
-FID_R62A	= 62			; Wacky Workbench Act 2 Present 
-FID_R62B	= 63			; Wacky Workbench Act 2 Past 
-FID_R62C	= 64			; Wacky Workbench Act 2 Good Future 
-FID_R62D	= 65			; Wacky Workbench Act 2 Bad Future 
-FID_R63C	= 66			; Wacky Workbench Act 3 Good Future 
-FID_R63D	= 67			; Wacky Workbench Act 3 Bad Future 
-FID_R71A	= 68			; Stardust Speedway Act 1 Present
-FID_R71B	= 69			; Stardust Speedway Act 1 Past
-FID_R71C	= 70			; Stardust Speedway Act 1 Good Future
-FID_R71D	= 71			; Stardust Speedway Act 1 Bad Future
-FID_R72A	= 72			; Stardust Speedway Act 2 Present 
-FID_R72B	= 73			; Stardust Speedway Act 2 Past 
-FID_R72C	= 74			; Stardust Speedway Act 2 Good Future 
-FID_R72D	= 75			; Stardust Speedway Act 2 Bad Future 
-FID_R73C	= 76			; Stardust Speedway Act 3 Good Future 
-FID_R73D	= 77			; Stardust Speedway Act 3 Bad Future 
-FID_R81A	= 78			; Metallic Madness Act 1 Present
-FID_R81B	= 79			; Metallic Madness Act 1 Past
-FID_R81C	= 80			; Metallic Madness Act 1 Good Future
-FID_R81D	= 81			; Metallic Madness Act 1 Bad Future
-FID_R82A	= 82			; Metallic Madness Act 2 Present 
-FID_R82B	= 83			; Metallic Madness Act 2 Past 
-FID_R82C	= 84			; Metallic Madness Act 2 Good Future 
-FID_R82D	= 85			; Metallic Madness Act 2 Bad Future 
-FID_R83C	= 86			; Metallic Madness Act 3 Good Future 
-FID_R83D	= 87			; Metallic Madness Act 3 Bad Future 
-FID_SPECMAIN	= 88			; Special Stage (Main CPU)
-FID_SPECSUB	= 89			; Special Stage (Sub CPU)
-FID_R1PCM	= 90			; PCM driver (Palmtree Panic)
-FID_R3PCM	= 91			; PCM driver (Collision Chaos)
-FID_R4PCM	= 92			; PCM driver (Tidal Tempest)
-FID_R5PCM	= 93			; PCM driver (Quartz Quadrant)
-FID_R6PCM	= 94			; PCM driver (Wacky Workbench)
-FID_R7PCM	= 95			; PCM driver (Stardust Speedway)
-FID_R8PCM	= 96			; PCM driver (Metallic Madness)
-FID_BOSSPCM	= 97			; PCM driver (Boss)
-FID_FINALPCM	= 98			; PCM driver (Final boss)
-FID_DAGARDDATA	= 99			; D.A. Garden data
-FID_R11ADEMO	= 100			; Palmtree Panic Act 1 Good Future demo
-FID_VISMODE	= 101			; Visual Mode
-FID_BURAMINIT	= 102			; Backup RAM initialization
-FID_BURAMSUB	= 103			; Backup RAM functions
-FID_BURAMMAIN	= 104			; Backup RAM manager
-FID_THANKSMAIN	= 105			; "Thank You" screen (Main CPU)
-FID_THANKSSUB	= 106			; "Thank You" screen (Sub CPU)
-FID_THANKSDATA	= 107			; "Thank You" screen  data
-FID_ENDMAIN	= 108			; Ending FMV (Main CPU)
-FID_BADENDSUB	= 109			; Bad ending FMV (Sub CPU, not a typo)
-FID_GOODENDSUB	= 110			; Good ending FMV (Sub CPU, not a typo)
-FID_FUNISINF	= 111			; "Fun is infinite" screen
-FID_SS8CREDS	= 112			; Special stage 8 credits
-FID_MCSONIC	= 113			; M.C. Sonic screen
-FID_TAILS	= 114			; Tails screen
-FID_BATMAN	= 115			; Batman Sonic screen
-FID_CUTESONIC	= 116			; Cute Sonic screen
-FID_STAFFTIMES	= 117			; Best staff times screen
-FID_DUMMY5	= 118			; Copy of sound test (Unused)
-FID_DUMMY6	= 119			; Copy of sound test (Unused)
-FID_DUMMY7	= 120			; Copy of sound test (Unused)
-FID_DUMMY8	= 121			; Copy of sound test (Unused)
-FID_DUMMY9	= 122			; Copy of sound test (Unused)
-FID_PENCILMAIN	= 123			; Pencil test FMV (Main CPU)
-FID_PENCILSUB	= 124			; Pencil test FMV (Sub CPU)
-FID_R43CDEMO	= 125			; Tidal Tempest Act 3 Good Future demo
-FID_R82ADEMO	= 126			; Metallic Madness Act 2 Present demo
+	rsreset
+FID_R11A	rs.b	1			; Palmtree Panic Act 1 Present
+FID_R11B	rs.b	1			; Palmtree Panic Act 1 Past
+FID_R11C	rs.b	1			; Palmtree Panic Act 1 Good Future
+FID_R11D	rs.b	1			; Palmtree Panic Act 1 Bad Future
+FID_MDINIT	rs.b	1			; Mega Drive initialization
+FID_SNDTEST	rs.b	1			; Sound test
+FID_STAGESEL	rs.b	1			; Stage select
+FID_R12A	rs.b	1			; Palmtree Panic Act 2 Present
+FID_R12B	rs.b	1			; Palmtree Panic Act 2 Past
+FID_R12C	rs.b	1			; Palmtree Panic Act 2 Good Future
+FID_R12D	rs.b	1			; Palmtree Panic Act 2 Bad Future
+FID_TITLEMAIN	rs.b	1			; Title screen (Main CPU)
+FID_TITLESUB	rs.b	1			; Title screen (Sub CPU)
+FID_WARP	rs.b	1			; Warp sequence
+FID_TIMEATKMAIN	rs.b	1			; Time attack menu (Main CPU)
+FID_TIMEATKSUB	rs.b	1			; Time attack menu (Sub CPU)
+FID_IPX		rs.b	1			; Main program
+FID_PENCILSTM	rs.b	1			; Pencil test FMV data
+FID_OPENSTM	rs.b	1			; Opening FMV data
+FID_BADENDSTM	rs.b	1			; Bad ending FMV data
+FID_GOODENDSTM	rs.b	1			; Good ending FMV data
+FID_OPENMAIN	rs.b	1			; Opening FMV (Main CPU)
+FID_OPENSUB	rs.b	1			; Opening FMV (Sub CPU)
+FID_COMINSOON	rs.b	1			; "Comin' Soon" screen
+FID_DAGARDMAIN	rs.b	1			; D.A. Garden (Main CPU)
+FID_DAGARDSUB	rs.b	1			; D.A. Garden (Sub CPU)
+FID_R31A	rs.b	1			; Collision Chaos Act 1 Present
+FID_R31B	rs.b	1			; Collision Chaos Act 1 Past
+FID_R31C	rs.b	1			; Collision Chaos Act 1 Good Future
+FID_R31D	rs.b	1			; Collision Chaos Act 1 Bad Future
+FID_R32A	rs.b	1			; Collision Chaos Act 2 Present 
+FID_R32B	rs.b	1			; Collision Chaos Act 2 Past 
+FID_R32C	rs.b	1			; Collision Chaos Act 2 Good Future 
+FID_R32D	rs.b	1			; Collision Chaos Act 2 Bad Future 
+FID_R33C	rs.b	1			; Collision Chaos Act 3 Good Future 
+FID_R33D	rs.b	1			; Collision Chaos Act 3 Bad Future 
+FID_R13C	rs.b	1			; Palmtree Panic Act 3 Good Future
+FID_R13D	rs.b	1			; Palmtree Panic Act 3 Bad Future 
+FID_R41A	rs.b	1			; Tidal Tempest Act 1 Present
+FID_R41B	rs.b	1			; Tidal Tempest Act 1 Past
+FID_R41C	rs.b	1			; Tidal Tempest Act 1 Good Future
+FID_R41D	rs.b	1			; Tidal Tempest Act 1 Bad Future
+FID_R42A	rs.b	1			; Tidal Tempest Act 2 Present 
+FID_R42B	rs.b	1			; Tidal Tempest Act 2 Past 
+FID_R42C	rs.b	1			; Tidal Tempest Act 2 Good Future 
+FID_R42D	rs.b	1			; Tidal Tempest Act 2 Bad Future 
+FID_R43C	rs.b	1			; Tidal Tempest Act 3 Good Future 
+FID_R43D	rs.b	1			; Tidal Tempest Act 3 Bad Future 
+FID_R51A	rs.b	1			; Quartz Quadrant Act 1 Present
+FID_R51B	rs.b	1			; Quartz Quadrant Act 1 Past
+FID_R51C	rs.b	1			; Quartz Quadrant Act 1 Good Future
+FID_R51D	rs.b	1			; Quartz Quadrant Act 1 Bad Future
+FID_R52A	rs.b	1			; Quartz Quadrant Act 2 Present 
+FID_R52B	rs.b	1			; Quartz Quadrant Act 2 Past 
+FID_R52C	rs.b	1			; Quartz Quadrant Act 2 Good Future 
+FID_R52D	rs.b	1			; Quartz Quadrant Act 2 Bad Future 
+FID_R53C	rs.b	1			; Quartz Quadrant Act 3 Good Future 
+FID_R53D	rs.b	1			; Quartz Quadrant Act 3 Bad Future 
+FID_R61A	rs.b	1			; Wacky Workbench Act 1 Present
+FID_R61B	rs.b	1			; Wacky Workbench Act 1 Past
+FID_R61C	rs.b	1			; Wacky Workbench Act 1 Good Future
+FID_R61D	rs.b	1			; Wacky Workbench Act 1 Bad Future
+FID_R62A	rs.b	1			; Wacky Workbench Act 2 Present 
+FID_R62B	rs.b	1			; Wacky Workbench Act 2 Past 
+FID_R62C	rs.b	1			; Wacky Workbench Act 2 Good Future 
+FID_R62D	rs.b	1			; Wacky Workbench Act 2 Bad Future 
+FID_R63C	rs.b	1			; Wacky Workbench Act 3 Good Future 
+FID_R63D	rs.b	1			; Wacky Workbench Act 3 Bad Future 
+FID_R71A	rs.b	1			; Stardust Speedway Act 1 Present
+FID_R71B	rs.b	1			; Stardust Speedway Act 1 Past
+FID_R71C	rs.b	1			; Stardust Speedway Act 1 Good Future
+FID_R71D	rs.b	1			; Stardust Speedway Act 1 Bad Future
+FID_R72A	rs.b	1			; Stardust Speedway Act 2 Present 
+FID_R72B	rs.b	1			; Stardust Speedway Act 2 Past 
+FID_R72C	rs.b	1			; Stardust Speedway Act 2 Good Future 
+FID_R72D	rs.b	1			; Stardust Speedway Act 2 Bad Future 
+FID_R73C	rs.b	1			; Stardust Speedway Act 3 Good Future 
+FID_R73D	rs.b	1			; Stardust Speedway Act 3 Bad Future 
+FID_R81A	rs.b	1			; Metallic Madness Act 1 Present
+FID_R81B	rs.b	1			; Metallic Madness Act 1 Past
+FID_R81C	rs.b	1			; Metallic Madness Act 1 Good Future
+FID_R81D	rs.b	1			; Metallic Madness Act 1 Bad Future
+FID_R82A	rs.b	1			; Metallic Madness Act 2 Present 
+FID_R82B	rs.b	1			; Metallic Madness Act 2 Past 
+FID_R82C	rs.b	1			; Metallic Madness Act 2 Good Future 
+FID_R82D	rs.b	1			; Metallic Madness Act 2 Bad Future 
+FID_R83C	rs.b	1			; Metallic Madness Act 3 Good Future 
+FID_R83D	rs.b	1			; Metallic Madness Act 3 Bad Future 
+FID_SPECMAIN	rs.b	1			; Special Stage (Main CPU)
+FID_SPECSUB	rs.b	1			; Special Stage (Sub CPU)
+FID_R1PCM	rs.b	1			; PCM driver (Palmtree Panic)
+FID_R3PCM	rs.b	1			; PCM driver (Collision Chaos)
+FID_R4PCM	rs.b	1			; PCM driver (Tidal Tempest)
+FID_R5PCM	rs.b	1			; PCM driver (Quartz Quadrant)
+FID_R6PCM	rs.b	1			; PCM driver (Wacky Workbench)
+FID_R7PCM	rs.b	1			; PCM driver (Stardust Speedway)
+FID_R8PCM	rs.b	1			; PCM driver (Metallic Madness)
+FID_BOSSPCM	rs.b	1			; PCM driver (Boss)
+FID_FINALPCM	rs.b	1			; PCM driver (Final boss)
+FID_DAGARDDATA	rs.b	1			; D.A. Garden data
+FID_R11ADEMO	rs.b	1			; Palmtree Panic Act 1 Good Future demo
+FID_VISMODE	rs.b	1			; Visual Mode
+FID_BURAMINIT	rs.b	1			; Backup RAM initialization
+FID_BURAMSUB	rs.b	1			; Backup RAM functions
+FID_BURAMMAIN	rs.b	1			; Backup RAM manager
+FID_THANKSMAIN	rs.b	1			; "Thank You" screen (Main CPU)
+FID_THANKSSUB	rs.b	1			; "Thank You" screen (Sub CPU)
+FID_THANKSDATA	rs.b	1			; "Thank You" screen  data
+FID_ENDMAIN	rs.b	1			; Ending FMV (Main CPU)
+FID_BADENDSUB	rs.b	1			; Bad ending FMV (Sub CPU, not a typo)
+FID_GOODENDSUB	rs.b	1			; Good ending FMV (Sub CPU, not a typo)
+FID_FUNISINF	rs.b	1			; "Fun is infinite" screen
+FID_SS8CREDS	rs.b	1			; Special stage 8 credits
+FID_MCSONIC	rs.b	1			; M.C. Sonic screen
+FID_TAILS	rs.b	1			; Tails screen
+FID_BATMAN	rs.b	1			; Batman Sonic screen
+FID_CUTESONIC	rs.b	1			; Cute Sonic screen
+FID_STAFFTIMES	rs.b	1			; Best staff times screen
+FID_DUMMY5	rs.b	1			; Copy of sound test (Unused)
+FID_DUMMY6	rs.b	1			; Copy of sound test (Unused)
+FID_DUMMY7	rs.b	1			; Copy of sound test (Unused)
+FID_DUMMY8	rs.b	1			; Copy of sound test (Unused)
+FID_DUMMY9	rs.b	1			; Copy of sound test (Unused)
+FID_PENCILMAIN	rs.b	1			; Pencil test FMV (Main CPU)
+FID_PENCILSUB	rs.b	1			; Pencil test FMV (Sub CPU)
+FID_R43CDEMO	rs.b	1			; Tidal Tempest Act 3 Good Future demo
+FID_R82ADEMO	rs.b	1			; Metallic Madness Act 2 Present demo
 
 ; -------------------------------------------------------------------------
 ; Sub CPU commands
 ; -------------------------------------------------------------------------
 
-	; rsset	1
-SCMD_R11A = 1			; Load Palmtree Panic Act 1 Present
-SCMD_R11B = 2			; Load Palmtree Panic Act 1 Past
-SCMD_R11C = 3			; Load Palmtree Panic Act 1 Good Future
-SCMD_R11D = 4			; Load Palmtree Panic Act 1 Bad Future
-SCMD_MDINIT = 5			; Load Mega Drive initialization
-SCMD_STAGESEL = 6			; Load stage select
-SCMD_R12A = 7			; Load Palmtree Panic Act 2 Present
-SCMD_R12B = 8			; Load Palmtree Panic Act 2 Past
-SCMD_R12C = 9			; Load Palmtree Panic Act 2 Good Future
-SCMD_R12D = 10			; Load Palmtree Panic Act 2 Bad Future
-SCMD_TITLE = 11			; Load title screen
-SCMD_WARP = 12			; Load warp sequence
-SCMD_TIMEATK = 13			; Load time attack menu
-SCMD_FADECDA = 14			; Fade out CDDA music
-SCMD_R1AMUS = 15			; Play Palmtree Panic Present music
-SCMD_R1CMUS = 16			; Play Palmtree Panic Good Future music
-SCMD_R1DMUS = 17			; Play Palmtree Panic Bad Future music
-SCMD_R3AMUS = 18			; Play Collision Chaos Present music
-SCMD_R3CMUS = 19			; Play Collision Chaos Good Future music
-SCMD_R3DMUS = 20			; Play Collision Chaos Bad Future music
-SCMD_R4AMUS = 21			; Play Tidal Tempest Present music
-SCMD_R4CMUS = 22			; Play Tidal Tempest Good Future music
-SCMD_R4DMUS = 23			; Play Tidal Tempest Bad Future music
-SCMD_R5AMUS = 24			; Play Quartz Quadrant Present music
-SCMD_R5CMUS = 25			; Play Quartz Quadrant Good Future music
-SCMD_R5DMUS = 26			; Play Quartz Quadrant Bad Future music
-SCMD_R6AMUS = 27			; Play Wacky Workbench Present music
-SCMD_R6CMUS = 28			; Play Wacky Workbench Good Future music
-SCMD_R6DMUS = 29			; Play Wacky Workbench Bad Future music
-SCMD_R7AMUS = 30			; Play Stardust Speedway Present music
-SCMD_R7CMUS = 31			; Play Stardust Speedway Good Future music
-SCMD_R7DMUS = 32			; Play Stardust Speedway Bad Future music
-SCMD_R8AMUS = 33			; Play Metallic Madness Present music
-SCMD_R8CMUS = 34			; Play Metallic Madness Good Future music
-SCMD_IPX = 35			; Load main program
-SCMD_R43CDEMO = 36			; Load Tidal Tempest Act 3 Good Future demo
-SCMD_R82ADEMO = 37			; Load Metallic Madness Act 2 Present demo
-SCMD_SNDTEST = 38			; Load sound test
-		; rs.b	1			; Invalid
-SCMD_R31A = 40			; Load Collision Chaos Act 1 Present
-SCMD_R31B = 41			; Load Collision Chaos Act 1 Past
-SCMD_R31C = 42			; Load Collision Chaos Act 1 Good Future
-SCMD_R31D = 43			; Load Collision Chaos Act 1 Bad Future
-SCMD_R32A = 44			; Load Collision Chaos Act 2 Present 
-SCMD_R32B = 45			; Load Collision Chaos Act 2 Past 
-SCMD_R32C = 46			; Load Collision Chaos Act 2 Good Future 
-SCMD_R32D = 47			; Load Collision Chaos Act 2 Bad Future 
-SCMD_R33C = 48			; Load Collision Chaos Act 3 Good Future 
-SCMD_R33D = 49			; Load Collision Chaos Act 3 Bad Future 
-SCMD_R13C = 50			; Load Palmtree Panic Act 3 Good Future
-SCMD_R13D = 51			; Load Palmtree Panic Act 3 Bad Future 
-SCMD_R41A = 52			; Load Tidal Tempest Act 1 Present
-SCMD_R41B = 53			; Load Tidal Tempest Act 1 Past
-SCMD_R41C = 54			; Load Tidal Tempest Act 1 Good Future
-SCMD_R41D = 55			; Load Tidal Tempest Act 1 Bad Future
-SCMD_R42A = 56			; Load Tidal Tempest Act 2 Present 
-SCMD_R42B = 57			; Load Tidal Tempest Act 2 Past 
-SCMD_R42C = 58			; Load Tidal Tempest Act 2 Good Future 
-SCMD_R42D = 59			; Load Tidal Tempest Act 2 Bad Future 
-SCMD_R43C = 60			; Load Tidal Tempest Act 3 Good Future 
-SCMD_R43D = 61			; Load Tidal Tempest Act 3 Bad Future 
-SCMD_R51A = 62			; Load Quartz Quadrant Act 1 Present
-SCMD_R51B = 63			; Load Quartz Quadrant Act 1 Past
-SCMD_R51C = 64			; Load Quartz Quadrant Act 1 Good Future
-SCMD_R51D = 65			; Load Quartz Quadrant Act 1 Bad Future
-SCMD_R52A = 66			; Load Quartz Quadrant Act 2 Present 
-SCMD_R52B = 67			; Load Quartz Quadrant Act 2 Past 
-SCMD_R52C = 68			; Load Quartz Quadrant Act 2 Good Future 
-SCMD_R52D = 69			; Load Quartz Quadrant Act 2 Bad Future 
-SCMD_R53C = 70			; Load Quartz Quadrant Act 3 Good Future 
-SCMD_R53D = 71			; Load Quartz Quadrant Act 3 Bad Future 
-SCMD_R61A = 72			; Load Wacky Workbench Act 1 Present
-SCMD_R61B = 73			; Load Wacky Workbench Act 1 Past
-SCMD_R61C = 74			; Load Wacky Workbench Act 1 Good Future
-SCMD_R61D = 75			; Load Wacky Workbench Act 1 Bad Future
-SCMD_R62A = 76			; Load Wacky Workbench Act 2 Present 
-SCMD_R62B = 77			; Load Wacky Workbench Act 2 Past 
-SCMD_R62C = 78			; Load Wacky Workbench Act 2 Good Future 
-SCMD_R62D = 79			; Load Wacky Workbench Act 2 Bad Future 
-SCMD_R63C = 80			; Load Wacky Workbench Act 3 Good Future 
-SCMD_R63D = 81			; Load Wacky Workbench Act 3 Bad Future 
-SCMD_R71A = 82			; Load Stardust Speedway Act 1 Present
-SCMD_R71B = 83			; Load Stardust Speedway Act 1 Past
-SCMD_R71C = 84			; Load Stardust Speedway Act 1 Good Future
-SCMD_R71D = 85			; Load Stardust Speedway Act 1 Bad Future
-SCMD_R72A = 86			; Load Stardust Speedway Act 2 Present 
-SCMD_R72B = 87			; Load Stardust Speedway Act 2 Past 
-SCMD_R72C = 88			; Load Stardust Speedway Act 2 Good Future 
-SCMD_R72D = 89			; Load Stardust Speedway Act 2 Bad Future 
-SCMD_R73C = 90			; Load Stardust Speedway Act 3 Good Future 
-SCMD_R73D = 91			; Load Stardust Speedway Act 3 Bad Future 
-SCMD_R81A = 92			; Load Metallic Madness Act 1 Present
-SCMD_R81B = 93			; Load Metallic Madness Act 1 Past
-SCMD_R81C = 94			; Load Metallic Madness Act 1 Good Future
-SCMD_R81D = 95			; Load Metallic Madness Act 1 Bad Future
-SCMD_R82A = 96			; Load Metallic Madness Act 2 Present 
-SCMD_R82B = 97			; Load Metallic Madness Act 2 Past 
-SCMD_R82C = 98			; Load Metallic Madness Act 2 Good Future 
-SCMD_R82D = 99			; Load Metallic Madness Act 2 Bad Future 
-SCMD_R83C = 100			; Load Metallic Madness Act 3 Good Future 
-SCMD_R83D = 101			; Load Metallic Madness Act 3 Bad Future 
-SCMD_R8DMUS = 102			; Play Metallic Madness Bad Future music
-SCMD_BOSSMUS = 103			; Play boss music
-SCMD_FINALMUS = 104			; Play final boss music
-SCMD_TITLEMUS = 105			; Play title screen music
-SCMD_TMATKMUS = 106			; Play time attack menu music
-SCMD_RESULTMUS = 107			; Play results music
-SCMD_SHOESMUS = 108			; Play speed shoes music
-SCMD_INVINCMUS = 109			; Play invincibility music
-SCMD_GMOVERMUS = 110			; Play game over music
-SCMD_SPECMUS = 111			; Play special stage music
-SCMD_DAGRDNMUS = 112			; Play D.A. Garden music
-SCMD_PROTOWARP = 113			; Play prototype warp sound
-SCMD_INTROMUS = 114			; Play opening music
-SCMD_ENDINGMUS = 115			; Play ending music
-SCMD_STOPCDDA = 116			; Stop CDDA music
-SCMD_SPECSTAGE = 117			; Load special stage
-SCMD_FUTURESFX = 118			; Play "Future" voice clip
-SCMD_PASTSFX = 119			; Play "Past" voice clip
-SCMD_ALRIGHTSFX = 120			; Play "Alright" voice clip
-SCMD_GIVEUPSFX = 121			; Play "I'm outta here" voice clip
-SCMD_YESSFX = 122			; Play "Yes" voice clip
-SCMD_YEAHSFX = 123			; Play "Yeah" voice clip
-SCMD_GIGGLESFX = 124			; Play Amy giggle voice clip
-SCMD_YELPSFX = 125			; Play Amy yelp voice clip
-SCMD_STOMPSFX = 126			; Play mech stomp sound
-SCMD_BUMPERSFX = 127			; Play bumper sound
-SCMD_PASTMUS = 128			; Play Past music
-SCMD_DAGARDEN = 129			; Load D.A. Garden
-SCMD_FADEPCM = 130			; Fade out PCM
-SCMD_STOPPCM = 131			; Stop PCM
-SCMD_R11ADEMO = 132			; Load Palmtree Panic Act 1 Present demo
-SCMD_VISMODE = 133			; Load Visual Mode menu
-SCMD_INITSS2 = 134			; Reset special stage flags
-SCMD_READSAVE = 135			; Read save data
-SCMD_WRITESAVE = 136			; Write save data
-SCMD_BURAMINIT = 137			; Load Backup RAM initialization
-SCMD_INITSS = 138			; Reset special stage flags
-SCMD_RDTEMPSAVE = 139			; Read temporary save data
-SCMD_WRTEMPSAVE = 140			; Write temporary save data
-SCMD_THANKYOU = 141			; Load "Thank You" screen
-SCMD_BURAMMGR = 142			; Load Backup RAM manager
-SCMD_RESETVOL = 143			; Reset CDDA music volume
-SCMD_PAUSEPCM = 144			; Pause PCM
-SCMD_UNPAUSEPCM = 145			; Unpause PCM
-SCMD_BREAKSFX = 146			; Play glass break sound
-SCMD_BADEND = 147			; Load bad ending FMV
-SCMD_GOODEND = 148			; Load good ending FMV
-SCMD_R1AMUST = 149			; Play Palmtree Panic Present music (sound test)
-SCMD_R1CMUST = 150			; Play Palmtree Panic Good Future music (sound test)
-SCMD_R1DMUST = 151			; Play Palmtree Panic Bad Future music (sound test)
-SCMD_R3AMUST = 152			; Play Collision Chaos Present music (sound test)
-SCMD_R3CMUST = 153			; Play Collision Chaos Good Future music (sound test)
-SCMD_R3DMUST = 154			; Play Collision Chaos Bad Future music (sound test)
-SCMD_R4AMUST = 155			; Play Tidal Tempest Present music (sound test)
-SCMD_R4CMUST = 156			; Play Tidal Tempest Good Future music (sound test)
-SCMD_R4DMUST = 157			; Play Tidal Tempest Bad Future music (sound test)
-SCMD_R5AMUST = 158			; Play Quartz Quadrant Present music (sound test)
-SCMD_R5CMUST = 159			; Play Quartz Quadrant Good Future music (sound test)
-SCMD_R5DMUST = 160			; Play Quartz Quadrant Bad Future music (sound test)
-SCMD_R6AMUST = 161			; Play Wacky Workbench Present music (sound test)
-SCMD_R6CMUST = 162			; Play Wacky Workbench Good Future music (sound test)
-SCMD_R6DMUST = 163			; Play Wacky Workbench Bad Future music (sound test)
-SCMD_R7AMUST = 164			; Play Stardust Speedway Present music (sound test)
-SCMD_R7CMUST = 165			; Play Stardust Speedway Good Future music (sound test)
-SCMD_R7DMUST = 166			; Play Stardust Speedway Bad Future music (sound test)
-SCMD_R8AMUST = 167			; Play Metallic Madness Present music (sound test)
-SCMD_R8CMUST = 168			; Play Metallic Madness Good Future music (sound test)
-SCMD_R8DMUST = 169			; Play Metallic Madness Bad Future music (sound test)
-SCMD_BOSSMUST = 170			; Play boss music (sound test)
-SCMD_FINALMUST = 171			; Play final boss music (sound test)
-SCMD_TITLEMUST = 172			; Play title screen music (sound test)
-SCMD_TMATKMUST = 173			; Play time attack music (sound test)
-SCMD_RESULTMUST = 174			; Play results music (sound test)
-SCMD_SHOESMUST = 175			; Play speed shoes music (sound test)
-SCMD_INVINCMUST = 176			; Play invincibility music (sound test)
-SCMD_GMOVERMUST = 177			; Play game over music (sound test)
-SCMD_SPECMUST = 178			; Play special stage music (sound test)
-SCMD_DAGRDNMUST = 179			; Play D.A. Garden music (sound test)
-SCMD_PROTOWARPT = 180			; Play prototype warp sound (sound test)
-SCMD_INTROMUST = 181			; Play opening music (sound test)
-SCMD_ENDINGMUST = 182			; Play ending music (sound test)
-SCMD_FUTURESFXT = 183			; Play "Future" voice clip (sound test)
-SCMD_PASTSFXT = 184			; Play "Past" voice clip (sound test)
-SCMD_ALRGHTSFXT = 185			; Play "Alright" voice clip (sound test)
-SCMD_GIVEUPSFXT = 186			; Play "I'm outta here" voice clip (sound test)
-SCMD_YESSFXT = 187			; Play "Yes" voice clip (sound test)
-SCMD_YEAHSFXT = 188			; Play "Yeah" voice clip (sound test)
-SCMD_GIGGLESFXT = 189			; Play Amy giggle voice clip (sound test)
-SCMD_YELPSFXT = 190			; Play Amy yelp voice clip (sound test)
-SCMD_STOMPSFXT = 191			; Play mech stomp sound (sound test)
-SCMD_BUMPERSFXT = 192			; Play bumper sound (sound test)
-SCMD_R1BMUST = 193			; Play Palmtree Panic Past music (sound test)
-SCMD_R3BMUST = 194			; Play Collision Chaos Past music (sound test)
-SCMD_R4BMUST = 195			; Play Tidal Tempest Past music (sound test)
-SCMD_R5BMUST = 196			; Play Quartz Quadrant Past music (sound test)
-SCMD_R6BMUST = 197			; Play Palmtree Panic Past music (sound test)
-SCMD_R7BMUST = 198			; Play Palmtree Panic Past music (sound test)
-SCMD_R8BMUST = 199			; Play Palmtree Panic Past music (sound test)
-SCMD_FUNISINF = 200			; Load "Fun is infinite" screen
-SCMD_SS8CREDS = 201			; Load special stage 8 credits
-SCMD_MCSONIC = 202			; Load M.C. Sonic screen
-SCMD_TAILS = 203			; Load Tails screen
-SCMD_BATMAN = 204			; Load Batman Sonic screen
-SCMD_CUTESONIC = 205			; Load cute Sonic screen
-SCMD_STAFFTIMES = 206			; Load best staff times screen
-SCMD_DUMMY1 = 207			; Load dummy file (unused)
-SCMD_DUMMY2 = 208			; Load dummy file (unused)
-SCMD_DUMMY3 = 209			; Load dummy file (unused)
-SCMD_DUMMY4 = 210			; Load dummy file (unused)
-SCMD_DUMMY5 = 211			; Load dummy file (unused)
-SCMD_PENCILTEST = 212			; Load pencil test FMV
-SCMD_PAUSECDA = 213			; Pause CDDA music
-SCMD_UNPAUSECDA = 214			; Unpause CDDA music
-SCMD_OPENING = 215			; Load opening FMV
-SCMD_COMINSOON = 216			; Load "Comin' Soon" screen
+	rsset	1
+SCMD_R11A	rs.b	1			; Load Palmtree Panic Act 1 Present
+SCMD_R11B	rs.b	1			; Load Palmtree Panic Act 1 Past
+SCMD_R11C	rs.b	1			; Load Palmtree Panic Act 1 Good Future
+SCMD_R11D	rs.b	1			; Load Palmtree Panic Act 1 Bad Future
+SCMD_MDINIT	rs.b	1			; Load Mega Drive initialization
+SCMD_STAGESEL	rs.b	1			; Load stage select
+SCMD_R12A	rs.b	1			; Load Palmtree Panic Act 2 Present
+SCMD_R12B	rs.b	1			; Load Palmtree Panic Act 2 Past
+SCMD_R12C	rs.b	1			; Load Palmtree Panic Act 2 Good Future
+SCMD_R12D	rs.b	1			; Load Palmtree Panic Act 2 Bad Future
+SCMD_TITLE	rs.b	1			; Load title screen
+SCMD_WARP	rs.b	1			; Load warp sequence
+SCMD_TIMEATK	rs.b	1			; Load time attack menu
+SCMD_FADECDA	rs.b	1			; Fade out CDDA music
+SCMD_R1AMUS	rs.b	1			; Play Palmtree Panic Present music
+SCMD_R1CMUS	rs.b	1			; Play Palmtree Panic Good Future music
+SCMD_R1DMUS	rs.b	1			; Play Palmtree Panic Bad Future music
+SCMD_R3AMUS	rs.b	1			; Play Collision Chaos Present music
+SCMD_R3CMUS	rs.b	1			; Play Collision Chaos Good Future music
+SCMD_R3DMUS	rs.b	1			; Play Collision Chaos Bad Future music
+SCMD_R4AMUS	rs.b	1			; Play Tidal Tempest Present music
+SCMD_R4CMUS	rs.b	1			; Play Tidal Tempest Good Future music
+SCMD_R4DMUS	rs.b	1			; Play Tidal Tempest Bad Future music
+SCMD_R5AMUS	rs.b	1			; Play Quartz Quadrant Present music
+SCMD_R5CMUS	rs.b	1			; Play Quartz Quadrant Good Future music
+SCMD_R5DMUS	rs.b	1			; Play Quartz Quadrant Bad Future music
+SCMD_R6AMUS	rs.b	1			; Play Wacky Workbench Present music
+SCMD_R6CMUS	rs.b	1			; Play Wacky Workbench Good Future music
+SCMD_R6DMUS	rs.b	1			; Play Wacky Workbench Bad Future music
+SCMD_R7AMUS	rs.b	1			; Play Stardust Speedway Present music
+SCMD_R7CMUS	rs.b	1			; Play Stardust Speedway Good Future music
+SCMD_R7DMUS	rs.b	1			; Play Stardust Speedway Bad Future music
+SCMD_R8AMUS	rs.b	1			; Play Metallic Madness Present music
+SCMD_R8CMUS	rs.b	1			; Play Metallic Madness Good Future music
+SCMD_IPX	rs.b	1			; Load main program
+SCMD_R43CDEMO	rs.b	1			; Load Tidal Tempest Act 3 Good Future demo
+SCMD_R82ADEMO	rs.b	1			; Load Metallic Madness Act 2 Present demo
+SCMD_SNDTEST	rs.b	1			; Load sound test
+		rs.b	1			; Invalid
+SCMD_R31A	rs.b	1			; Load Collision Chaos Act 1 Present
+SCMD_R31B	rs.b	1			; Load Collision Chaos Act 1 Past
+SCMD_R31C	rs.b	1			; Load Collision Chaos Act 1 Good Future
+SCMD_R31D	rs.b	1			; Load Collision Chaos Act 1 Bad Future
+SCMD_R32A	rs.b	1			; Load Collision Chaos Act 2 Present 
+SCMD_R32B	rs.b	1			; Load Collision Chaos Act 2 Past 
+SCMD_R32C	rs.b	1			; Load Collision Chaos Act 2 Good Future 
+SCMD_R32D	rs.b	1			; Load Collision Chaos Act 2 Bad Future 
+SCMD_R33C	rs.b	1			; Load Collision Chaos Act 3 Good Future 
+SCMD_R33D	rs.b	1			; Load Collision Chaos Act 3 Bad Future 
+SCMD_R13C	rs.b	1			; Load Palmtree Panic Act 3 Good Future
+SCMD_R13D	rs.b	1			; Load Palmtree Panic Act 3 Bad Future 
+SCMD_R41A	rs.b	1			; Load Tidal Tempest Act 1 Present
+SCMD_R41B	rs.b	1			; Load Tidal Tempest Act 1 Past
+SCMD_R41C	rs.b	1			; Load Tidal Tempest Act 1 Good Future
+SCMD_R41D	rs.b	1			; Load Tidal Tempest Act 1 Bad Future
+SCMD_R42A	rs.b	1			; Load Tidal Tempest Act 2 Present 
+SCMD_R42B	rs.b	1			; Load Tidal Tempest Act 2 Past 
+SCMD_R42C	rs.b	1			; Load Tidal Tempest Act 2 Good Future 
+SCMD_R42D	rs.b	1			; Load Tidal Tempest Act 2 Bad Future 
+SCMD_R43C	rs.b	1			; Load Tidal Tempest Act 3 Good Future 
+SCMD_R43D	rs.b	1			; Load Tidal Tempest Act 3 Bad Future 
+SCMD_R51A	rs.b	1			; Load Quartz Quadrant Act 1 Present
+SCMD_R51B	rs.b	1			; Load Quartz Quadrant Act 1 Past
+SCMD_R51C	rs.b	1			; Load Quartz Quadrant Act 1 Good Future
+SCMD_R51D	rs.b	1			; Load Quartz Quadrant Act 1 Bad Future
+SCMD_R52A	rs.b	1			; Load Quartz Quadrant Act 2 Present 
+SCMD_R52B	rs.b	1			; Load Quartz Quadrant Act 2 Past 
+SCMD_R52C	rs.b	1			; Load Quartz Quadrant Act 2 Good Future 
+SCMD_R52D	rs.b	1			; Load Quartz Quadrant Act 2 Bad Future 
+SCMD_R53C	rs.b	1			; Load Quartz Quadrant Act 3 Good Future 
+SCMD_R53D	rs.b	1			; Load Quartz Quadrant Act 3 Bad Future 
+SCMD_R61A	rs.b	1			; Load Wacky Workbench Act 1 Present
+SCMD_R61B	rs.b	1			; Load Wacky Workbench Act 1 Past
+SCMD_R61C	rs.b	1			; Load Wacky Workbench Act 1 Good Future
+SCMD_R61D	rs.b	1			; Load Wacky Workbench Act 1 Bad Future
+SCMD_R62A	rs.b	1			; Load Wacky Workbench Act 2 Present 
+SCMD_R62B	rs.b	1			; Load Wacky Workbench Act 2 Past 
+SCMD_R62C	rs.b	1			; Load Wacky Workbench Act 2 Good Future 
+SCMD_R62D	rs.b	1			; Load Wacky Workbench Act 2 Bad Future 
+SCMD_R63C	rs.b	1			; Load Wacky Workbench Act 3 Good Future 
+SCMD_R63D	rs.b	1			; Load Wacky Workbench Act 3 Bad Future 
+SCMD_R71A	rs.b	1			; Load Stardust Speedway Act 1 Present
+SCMD_R71B	rs.b	1			; Load Stardust Speedway Act 1 Past
+SCMD_R71C	rs.b	1			; Load Stardust Speedway Act 1 Good Future
+SCMD_R71D	rs.b	1			; Load Stardust Speedway Act 1 Bad Future
+SCMD_R72A	rs.b	1			; Load Stardust Speedway Act 2 Present 
+SCMD_R72B	rs.b	1			; Load Stardust Speedway Act 2 Past 
+SCMD_R72C	rs.b	1			; Load Stardust Speedway Act 2 Good Future 
+SCMD_R72D	rs.b	1			; Load Stardust Speedway Act 2 Bad Future 
+SCMD_R73C	rs.b	1			; Load Stardust Speedway Act 3 Good Future 
+SCMD_R73D	rs.b	1			; Load Stardust Speedway Act 3 Bad Future 
+SCMD_R81A	rs.b	1			; Load Metallic Madness Act 1 Present
+SCMD_R81B	rs.b	1			; Load Metallic Madness Act 1 Past
+SCMD_R81C	rs.b	1			; Load Metallic Madness Act 1 Good Future
+SCMD_R81D	rs.b	1			; Load Metallic Madness Act 1 Bad Future
+SCMD_R82A	rs.b	1			; Load Metallic Madness Act 2 Present 
+SCMD_R82B	rs.b	1			; Load Metallic Madness Act 2 Past 
+SCMD_R82C	rs.b	1			; Load Metallic Madness Act 2 Good Future 
+SCMD_R82D	rs.b	1			; Load Metallic Madness Act 2 Bad Future 
+SCMD_R83C	rs.b	1			; Load Metallic Madness Act 3 Good Future 
+SCMD_R83D	rs.b	1			; Load Metallic Madness Act 3 Bad Future 
+SCMD_R8DMUS	rs.b	1			; Play Metallic Madness Bad Future music
+SCMD_BOSSMUS	rs.b	1			; Play boss music
+SCMD_FINALMUS	rs.b	1			; Play final boss music
+SCMD_TITLEMUS	rs.b	1			; Play title screen music
+SCMD_TMATKMUS	rs.b	1			; Play time attack menu music
+SCMD_RESULTMUS	rs.b	1			; Play results music
+SCMD_SHOESMUS	rs.b	1			; Play speed shoes music
+SCMD_INVINCMUS	rs.b	1			; Play invincibility music
+SCMD_GMOVERMUS	rs.b	1			; Play game over music
+SCMD_SPECMUS	rs.b	1			; Play special stage music
+SCMD_DAGRDNMUS	rs.b	1			; Play D.A. Garden music
+SCMD_PROTOWARP	rs.b	1			; Play prototype warp sound
+SCMD_INTROMUS	rs.b	1			; Play opening music
+SCMD_ENDINGMUS	rs.b	1			; Play ending music
+SCMD_STOPCDDA	rs.b	1			; Stop CDDA music
+SCMD_SPECSTAGE	rs.b	1			; Load special stage
+SCMD_FUTURESFX	rs.b	1			; Play "Future" voice clip
+SCMD_PASTSFX	rs.b	1			; Play "Past" voice clip
+SCMD_ALRIGHTSFX	rs.b	1			; Play "Alright" voice clip
+SCMD_GIVEUPSFX	rs.b	1			; Play "I'm outta here" voice clip
+SCMD_YESSFX	rs.b	1			; Play "Yes" voice clip
+SCMD_YEAHSFX	rs.b	1			; Play "Yeah" voice clip
+SCMD_GIGGLESFX	rs.b	1			; Play Amy giggle voice clip
+SCMD_YELPSFX	rs.b	1			; Play Amy yelp voice clip
+SCMD_STOMPSFX	rs.b	1			; Play mech stomp sound
+SCMD_BUMPERSFX	rs.b	1			; Play bumper sound
+SCMD_PASTMUS	rs.b	1			; Play Past music
+SCMD_DAGARDEN	rs.b	1			; Load D.A. Garden
+SCMD_FADEPCM	rs.b	1			; Fade out PCM
+SCMD_STOPPCM	rs.b	1			; Stop PCM
+SCMD_R11ADEMO	rs.b	1			; Load Palmtree Panic Act 1 Present demo
+SCMD_VISMODE	rs.b	1			; Load Visual Mode menu
+SCMD_INITSS2	rs.b	1			; Reset special stage flags
+SCMD_READSAVE	rs.b	1			; Read save data
+SCMD_WRITESAVE	rs.b	1			; Write save data
+SCMD_BURAMINIT	rs.b	1			; Load Backup RAM initialization
+SCMD_INITSS	rs.b	1			; Reset special stage flags
+SCMD_RDTEMPSAVE	rs.b	1			; Read temporary save data
+SCMD_WRTEMPSAVE	rs.b	1			; Write temporary save data
+SCMD_THANKYOU	rs.b	1			; Load "Thank You" screen
+SCMD_BURAMMGR	rs.b	1			; Load Backup RAM manager
+SCMD_RESETVOL	rs.b	1			; Reset CDDA music volume
+SCMD_PAUSEPCM	rs.b	1			; Pause PCM
+SCMD_UNPAUSEPCM	rs.b	1			; Unpause PCM
+SCMD_BREAKSFX	rs.b	1			; Play glass break sound
+SCMD_BADEND	rs.b	1			; Load bad ending FMV
+SCMD_GOODEND	rs.b	1			; Load good ending FMV
+SCMD_R1AMUST	rs.b	1			; Play Palmtree Panic Present music (sound test)
+SCMD_R1CMUST	rs.b	1			; Play Palmtree Panic Good Future music (sound test)
+SCMD_R1DMUST	rs.b	1			; Play Palmtree Panic Bad Future music (sound test)
+SCMD_R3AMUST	rs.b	1			; Play Collision Chaos Present music (sound test)
+SCMD_R3CMUST	rs.b	1			; Play Collision Chaos Good Future music (sound test)
+SCMD_R3DMUST	rs.b	1			; Play Collision Chaos Bad Future music (sound test)
+SCMD_R4AMUST	rs.b	1			; Play Tidal Tempest Present music (sound test)
+SCMD_R4CMUST	rs.b	1			; Play Tidal Tempest Good Future music (sound test)
+SCMD_R4DMUST	rs.b	1			; Play Tidal Tempest Bad Future music (sound test)
+SCMD_R5AMUST	rs.b	1			; Play Quartz Quadrant Present music (sound test)
+SCMD_R5CMUST	rs.b	1			; Play Quartz Quadrant Good Future music (sound test)
+SCMD_R5DMUST	rs.b	1			; Play Quartz Quadrant Bad Future music (sound test)
+SCMD_R6AMUST	rs.b	1			; Play Wacky Workbench Present music (sound test)
+SCMD_R6CMUST	rs.b	1			; Play Wacky Workbench Good Future music (sound test)
+SCMD_R6DMUST	rs.b	1			; Play Wacky Workbench Bad Future music (sound test)
+SCMD_R7AMUST	rs.b	1			; Play Stardust Speedway Present music (sound test)
+SCMD_R7CMUST	rs.b	1			; Play Stardust Speedway Good Future music (sound test)
+SCMD_R7DMUST	rs.b	1			; Play Stardust Speedway Bad Future music (sound test)
+SCMD_R8AMUST	rs.b	1			; Play Metallic Madness Present music (sound test)
+SCMD_R8CMUST	rs.b	1			; Play Metallic Madness Good Future music (sound test)
+SCMD_R8DMUST	rs.b	1			; Play Metallic Madness Bad Future music (sound test)
+SCMD_BOSSMUST	rs.b	1			; Play boss music (sound test)
+SCMD_FINALMUST	rs.b	1			; Play final boss music (sound test)
+SCMD_TITLEMUST	rs.b	1			; Play title screen music (sound test)
+SCMD_TMATKMUST	rs.b	1			; Play time attack music (sound test)
+SCMD_RESULTMUST	rs.b	1			; Play results music (sound test)
+SCMD_SHOESMUST	rs.b	1			; Play speed shoes music (sound test)
+SCMD_INVINCMUST	rs.b	1			; Play invincibility music (sound test)
+SCMD_GMOVERMUST	rs.b	1			; Play game over music (sound test)
+SCMD_SPECMUST	rs.b	1			; Play special stage music (sound test)
+SCMD_DAGRDNMUST	rs.b	1			; Play D.A. Garden music (sound test)
+SCMD_PROTOWARPT	rs.b	1			; Play prototype warp sound (sound test)
+SCMD_INTROMUST	rs.b	1			; Play opening music (sound test)
+SCMD_ENDINGMUST	rs.b	1			; Play ending music (sound test)
+SCMD_FUTURESFXT	rs.b	1			; Play "Future" voice clip (sound test)
+SCMD_PASTSFXT	rs.b	1			; Play "Past" voice clip (sound test)
+SCMD_ALRGHTSFXT	rs.b	1			; Play "Alright" voice clip (sound test)
+SCMD_GIVEUPSFXT	rs.b	1			; Play "I'm outta here" voice clip (sound test)
+SCMD_YESSFXT	rs.b	1			; Play "Yes" voice clip (sound test)
+SCMD_YEAHSFXT	rs.b	1			; Play "Yeah" voice clip (sound test)
+SCMD_GIGGLESFXT	rs.b	1			; Play Amy giggle voice clip (sound test)
+SCMD_YELPSFXT	rs.b	1			; Play Amy yelp voice clip (sound test)
+SCMD_STOMPSFXT	rs.b	1			; Play mech stomp sound (sound test)
+SCMD_BUMPERSFXT	rs.b	1			; Play bumper sound (sound test)
+SCMD_R1BMUST	rs.b	1			; Play Palmtree Panic Past music (sound test)
+SCMD_R3BMUST	rs.b	1			; Play Collision Chaos Past music (sound test)
+SCMD_R4BMUST	rs.b	1			; Play Tidal Tempest Past music (sound test)
+SCMD_R5BMUST	rs.b	1			; Play Quartz Quadrant Past music (sound test)
+SCMD_R6BMUST	rs.b	1			; Play Palmtree Panic Past music (sound test)
+SCMD_R7BMUST	rs.b	1			; Play Palmtree Panic Past music (sound test)
+SCMD_R8BMUST	rs.b	1			; Play Palmtree Panic Past music (sound test)
+SCMD_FUNISINF	rs.b	1			; Load "Fun is infinite" screen
+SCMD_SS8CREDS	rs.b	1			; Load special stage 8 credits
+SCMD_MCSONIC	rs.b	1			; Load M.C. Sonic screen
+SCMD_TAILS	rs.b	1			; Load Tails screen
+SCMD_BATMAN	rs.b	1			; Load Batman Sonic screen
+SCMD_CUTESONIC	rs.b	1			; Load cute Sonic screen
+SCMD_STAFFTIMES	rs.b	1			; Load best staff times screen
+SCMD_DUMMY1	rs.b	1			; Load dummy file (unused)
+SCMD_DUMMY2	rs.b	1			; Load dummy file (unused)
+SCMD_DUMMY3	rs.b	1			; Load dummy file (unused)
+SCMD_DUMMY4	rs.b	1			; Load dummy file (unused)
+SCMD_DUMMY5	rs.b	1			; Load dummy file (unused)
+SCMD_PENCILTEST	rs.b	1			; Load pencil test FMV
+SCMD_PAUSECDA	rs.b	1			; Pause CDDA music
+SCMD_UNPAUSECDA	rs.b	1			; Unpause CDDA music
+SCMD_OPENING	rs.b	1			; Load opening FMV
+SCMD_COMINSOON	rs.b	1			; Load "Comin' Soon" screen
 
 ; -------------------------------------------------------------------------
 
-	ifdef SUBCPU
+	if def(SUBCPU)
 
 ; -------------------------------------------------------------------------
 ; Addresses

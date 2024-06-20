@@ -32,27 +32,27 @@ Pal_S1SegaBG:
 
 ; Sonic 1 title screen (leftover)
 Pal_S1Title:
-	binclude	"Level/_Data/Palette (Sonic 1 Title).bin"
+	incbin	"Level/_Data/Palette (Sonic 1 Title).bin"
 	even
 
 ; Sonic 1 level select screen (leftover)
 Pal_S1LevSel:
-	binclude	"Level/_Data/Palette (Sonic 1 Level Select).bin"
+	incbin	"Level/_Data/Palette (Sonic 1 Level Select).bin"
 	even
 
 ; Sonic palette
 Pal_Sonic:
-	binclude	"Level/_Objects/Sonic/Data/Palette.bin"
+	incbin	"Level/_Objects/Sonic/Data/Palette.bin"
 	even
 
 ; Level palette
 Pal_Level:
-	binclude	"Level/Wacky Workbench/Data/Palette (Present).bin"
+	incbin	"Level/Wacky Workbench/Data/Palette (Present).bin"
 	even
 
 ; Level palette (unknown variant)
 Pal_LevelUnk:
-	binclude	"Level/Wacky Workbench/Data/Unused/Palette (Present, Unknown).bin"
+	incbin	"Level/Wacky Workbench/Data/Unused/Palette (Present, Unknown).bin"
 	even
 
 ; -------------------------------------------------------------------------

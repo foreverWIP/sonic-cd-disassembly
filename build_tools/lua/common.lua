@@ -22,7 +22,7 @@ end
 
 local function create_directory(path)
 	if os_name == "Windows" then
-		os.execute("md \"" .. path .. "\" 2> nul")
+		os.execute("md \"" .. path .. "\"")
 	else
 		os.execute("mkdir \"" .. path .. "\"")
 	end

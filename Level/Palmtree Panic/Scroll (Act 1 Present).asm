@@ -120,7 +120,7 @@ LevelSizeLoad_StartPos:
 ; -------------------------------------------------------------------------
 
 LevelStartLoc:
-	binclude	"Level/Palmtree Panic/Data/Start Position (Act 1 Present).bin"
+	incbin	"Level/Palmtree Panic/Data/Start Position (Act 1 Present).bin"
 
 ; -------------------------------------------------------------------------
 ; Special chunk IDs

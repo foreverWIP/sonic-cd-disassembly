@@ -1284,67 +1284,67 @@ AnimateStamps:
 ; -------------------------------------------------------------------------
 
 HazardAnim_SS1:
-	binclude	"Special Stage/Data/Stage 1/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 1/Animations (Hazard).bin"
 	even
 
 FanAnim_SS1:
-	binclude	"Special Stage/Data/Stage 1/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 1/Animations (Fan).bin"
 	even
 
 HazardAnim_SS2:
-	binclude	"Special Stage/Data/Stage 2/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 2/Animations (Hazard).bin"
 	even
 
 FanAnim_SS2:
-	binclude	"Special Stage/Data/Stage 2/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 2/Animations (Fan).bin"
 	even
 
 HazardAnim_SS3:
-	binclude	"Special Stage/Data/Stage 3/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 3/Animations (Hazard).bin"
 	even
 
 FanAnim_SS3:
-	binclude	"Special Stage/Data/Stage 3/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 3/Animations (Fan).bin"
 	even
 
 HazardAnim_SS4:
-	binclude	"Special Stage/Data/Stage 4/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 4/Animations (Hazard).bin"
 	even
 
 FanAnim_SS4:
-	binclude	"Special Stage/Data/Stage 4/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 4/Animations (Fan).bin"
 	even
 
 HazardAnim_SS5:
-	binclude	"Special Stage/Data/Stage 5/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 5/Animations (Hazard).bin"
 	even
 
 FanAnim_SS5:
-	binclude	"Special Stage/Data/Stage 5/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 5/Animations (Fan).bin"
 	even
 
 HazardAnim_SS6:
-	binclude	"Special Stage/Data/Stage 6/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 6/Animations (Hazard).bin"
 	even
 
 FanAnim_SS6:
-	binclude	"Special Stage/Data/Stage 6/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 6/Animations (Fan).bin"
 	even
 
 HazardAnim_SS7:
-	binclude	"Special Stage/Data/Stage 7/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 7/Animations (Hazard).bin"
 	even
 
 FanAnim_SS7:
-	binclude	"Special Stage/Data/Stage 7/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 7/Animations (Fan).bin"
 	even
 
 HazardAnim_SS8:
-	binclude	"Special Stage/Data/Stage 8/Animations (Hazard).bin"
+	incbin	"Special Stage/Data/Stage 8/Animations (Hazard).bin"
 	even
 
 FanAnim_SS8:
-	binclude	"Special Stage/Data/Stage 8/Animations (Fan).bin"
+	incbin	"Special Stage/Data/Stage 8/Animations (Fan).bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -1500,35 +1500,35 @@ GetStampAtPos:
 ; -------------------------------------------------------------------------
 
 StampTypes_SS1:
-	binclude	"Special Stage/Data/Stage 1/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 1/Stamp Types.bin"
 	even
 
 StampTypes_SS2:
-	binclude	"Special Stage/Data/Stage 2/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 2/Stamp Types.bin"
 	even
 
 StampTypes_SS3:
-	binclude	"Special Stage/Data/Stage 3/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 3/Stamp Types.bin"
 	even
 
 StampTypes_SS4:
-	binclude	"Special Stage/Data/Stage 4/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 4/Stamp Types.bin"
 	even
 
 StampTypes_SS5:
-	binclude	"Special Stage/Data/Stage 5/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 5/Stamp Types.bin"
 	even
 
 StampTypes_SS6:
-	binclude	"Special Stage/Data/Stage 6/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 6/Stamp Types.bin"
 	even
 
 StampTypes_SS7:
-	binclude	"Special Stage/Data/Stage 7/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 7/Stamp Types.bin"
 	even
 
 StampTypes_SS8:
-	binclude	"Special Stage/Data/Stage 8/Stamp Types.bin"
+	incbin	"Special Stage/Data/Stage 8/Stamp Types.bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -2560,7 +2560,7 @@ SineTable:
 ; -------------------------------------------------------------------------
 	
 	align	SpecStageData, $FF
-	binclude	"Special Stage/Stage Data.bin"
+	incbin	"Special Stage/Stage Data.bin"
 
 ; -------------------------------------------------------------------------
 ; 3D sprite mappings section
@@ -2605,71 +2605,71 @@ MapSpr_UFOShoes:
 ; -------------------------------------------------------------------------
 	
 Stamps_SS1:
-	binclude	"Special Stage/Data/Stage 1/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 1/Stamps.kos"
 	align	$10
 
 Stamps_SS2:
-	binclude	"Special Stage/Data/Stage 2/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 2/Stamps.kos"
 	align	$10
 	
 Stamps_SS3_1:
-	binclude	"Special Stage/Data/Stage 3/Stamps 1.kos"
+	incbin	"Special Stage/Data/Stage 3/Stamps 1.kos"
 	align	$10
 	
 Stamps_SS3_2:
-	binclude	"Special Stage/Data/Stage 3/Stamps 2.kos"
+	incbin	"Special Stage/Data/Stage 3/Stamps 2.kos"
 	align	$10
 	
 Stamps_SS4:
-	binclude	"Special Stage/Data/Stage 4/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 4/Stamps.kos"
 	align	$10
 	
 Stamps_SS5:
-	binclude	"Special Stage/Data/Stage 5/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 5/Stamps.kos"
 	align	$10
 
 Stamps_SS6:
-	binclude	"Special Stage/Data/Stage 6/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 6/Stamps.kos"
 	align	$10
 	
 Stamps_SS7:
-	binclude	"Special Stage/Data/Stage 7/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 7/Stamps.kos"
 	align	$10
 
 Stamps_SS8:
-	binclude	"Special Stage/Data/Stage 8/Stamps.kos"
+	incbin	"Special Stage/Data/Stage 8/Stamps.kos"
 	align	$10
 
 StampMap_SS1:
-	binclude	"Special Stage/Data/Stage 1/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 1/Stamp Map.kos"
 	align	$10
 
 StampMap_SS2:
-	binclude	"Special Stage/Data/Stage 2/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 2/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS3:
-	binclude	"Special Stage/Data/Stage 3/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 3/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS4:
-	binclude	"Special Stage/Data/Stage 4/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 4/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS5:
-	binclude	"Special Stage/Data/Stage 5/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 5/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS6:
-	binclude	"Special Stage/Data/Stage 6/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 6/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS7:
-	binclude	"Special Stage/Data/Stage 7/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 7/Stamp Map.kos"
 	align	$10
 	
 StampMap_SS8:
-	binclude	"Special Stage/Data/Stage 8/Stamp Map.kos"
+	incbin	"Special Stage/Data/Stage 8/Stamp Map.kos"
 	align	$10
 
 ; -------------------------------------------------------------------------

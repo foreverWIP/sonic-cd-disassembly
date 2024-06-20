@@ -544,14 +544,14 @@ ObjSonic_GetStartPos:
 ; -------------------------------------------------------------------------
 
 .StartPos:
-	binclude	"Special Stage/Data/Stage 1/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 2/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 3/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 4/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 5/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 6/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 7/Start Position.bin"
-	binclude	"Special Stage/Data/Stage 8/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 1/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 2/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 3/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 4/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 5/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 6/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 7/Start Position.bin"
+	incbin	"Special Stage/Data/Stage 8/Start Position.bin"
 
 ; -------------------------------------------------------------------------
 ; Check if the stage is beaten

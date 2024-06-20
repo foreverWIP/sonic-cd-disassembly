@@ -856,7 +856,7 @@ InitMD:
 	even
 
 .Palette:
-	binclude	"Title Screen/Data/Palette (Initialization).bin"
+	incbin	"Title Screen/Data/Palette (Initialization).bin"
 .PaletteEnd:
 	even
 
@@ -865,7 +865,7 @@ InitMD:
 ; -------------------------------------------------------------------------
 
 Pal_Title:
-	binclude	"Title Screen/Data/Palette.bin"
+	incbin	"Title Screen/Data/Palette.bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -1828,92 +1828,92 @@ DrawFgTilemap:
 ; -------------------------------------------------------------------------
 
 Map_Water:
-	binclude	"Title Screen/Data/Water Mappings.bin"
+	incbin	"Title Screen/Data/Water Mappings.bin"
 	even
 
 Map_Mountains:
-	binclude	"Title Screen/Data/Moutains Mappings.bin"
+	incbin	"Title Screen/Data/Moutains Mappings.bin"
 	even
 
 Map_Emblem:
-	binclude	"Title Screen/Data/Emblem Mappings.bin"
+	incbin	"Title Screen/Data/Emblem Mappings.bin"
 	even
 
 Art_Water:
-	binclude	"Title Screen/Data/Water Art.nem"
+	incbin	"Title Screen/Data/Water Art.nem"
 	even
 
 Art_Mountains:
-	binclude	"Title Screen/Data/Moutains Art.nem"
+	incbin	"Title Screen/Data/Moutains Art.nem"
 	even
 
 Art_Emblem:
-	binclude	"Title Screen/Data/Emblem Art.nem"
+	incbin	"Title Screen/Data/Emblem Art.nem"
 	even
 
 Art_Banner:
-	binclude	"Title Screen/Objects/Banner/Data/Art.nem"
+	incbin	"Title Screen/Objects/Banner/Data/Art.nem"
 	even
 
 Art_Planet:
-	binclude	"Title Screen/Objects/Planet/Data/Art.nem"
+	incbin	"Title Screen/Objects/Planet/Data/Art.nem"
 	even
 
 Art_Sonic:
-	binclude	"Title Screen/Objects/Sonic/Data/Art.nem"
+	incbin	"Title Screen/Objects/Sonic/Data/Art.nem"
 	even
 
 Art_SolidColor:
-	binclude	"Title Screen/Data/Solid Color Art.nem"
+	incbin	"Title Screen/Data/Solid Color Art.nem"
 	even
 
 Art_NewGameText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, New Game).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, New Game).nem"
 	even
 
 Art_ContinueText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, Continue).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, Continue).nem"
 	even
 
 Art_TimeAttackText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, Time Attack).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, Time Attack).nem"
 	even
 
 Art_RamDataText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, RAM Data).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, RAM Data).nem"
 	even
 
 Art_DAGardenText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, D.A. Garden).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, D.A. Garden).nem"
 	even
 
 Art_VisualModeText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, Visual Mode).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, Visual Mode).nem"
 	even
 
 Art_PressStartText:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Text, Press Start).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Text, Press Start).nem"
 	even
 
 Art_MenuArrow:
-	binclude	"Title Screen/Objects/Menu/Data/Art (Arrow).nem"
+	incbin	"Title Screen/Objects/Menu/Data/Art (Arrow).nem"
 	even
 
 Art_Copyright:
-	binclude	"Title Screen/Objects/Copyright/Data/Art (Copyright, JPN and EUR).nem"
+	incbin	"Title Screen/Objects/Copyright/Data/Art (Copyright, JPN and EUR).nem"
 	even
 
 	if REGION=USA
 Art_TM:
-		binclude	"Title Screen/Objects/Copyright/Data/Art (TM, USA).nem"
+		incbin	"Title Screen/Objects/Copyright/Data/Art (TM, USA).nem"
 		even
 
 Art_CopyrightTM:
-		binclude	"Title Screen/Objects/Copyright/Data/Art (Copyright, USA).nem"
+		incbin	"Title Screen/Objects/Copyright/Data/Art (Copyright, USA).nem"
 		even
 	else
 Art_TM:
-		binclude	"Title Screen/Objects/Copyright/Data/Art (TM, JPN and EUR).nem"
+		incbin	"Title Screen/Objects/Copyright/Data/Art (TM, JPN and EUR).nem"
 		even
 	endif
 

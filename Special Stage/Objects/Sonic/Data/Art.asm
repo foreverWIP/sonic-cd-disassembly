@@ -70,281 +70,281 @@
 	dc.l	.Frame69
 
 .Frame0:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/0.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/0.bin"
 	even
 
 .Frame1:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/1.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/1.bin"
 	even
 
 .Frame2:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/2.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/2.bin"
 	even
 
 .Frame3:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/3.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/3.bin"
 	even
 
 .Frame4:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/4.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/4.bin"
 	even
 
 .Frame5:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/5.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/5.bin"
 	even
 
 .Frame6:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/6.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/6.bin"
 	even
 
 .Frame7:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/7.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/7.bin"
 	even
 
 .Frame8:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/8.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/8.bin"
 	even
 
 .Frame9:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/9.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/9.bin"
 	even
 
 .Frame10:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/10.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/10.bin"
 	even
 
 .Frame11:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/11.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/11.bin"
 	even
 
 .Frame12:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/12.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/12.bin"
 	even
 
 .Frame13:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/13.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/13.bin"
 	even
 
 .Frame14:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/14.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/14.bin"
 	even
 
 .Frame15:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/15.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/15.bin"
 	even
 
 .Frame16:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/16.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/16.bin"
 	even
 
 .Frame17:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/17.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/17.bin"
 	even
 
 .Frame18:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/18.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/18.bin"
 	even
 
 .Frame19:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/19.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/19.bin"
 	even
 
 .Frame20:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/20.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/20.bin"
 	even
 
 .Frame21:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/21.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/21.bin"
 	even
 
 .Frame22:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/22.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/22.bin"
 	even
 
 .Frame23:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/23.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/23.bin"
 	even
 
 .Frame24:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/24.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/24.bin"
 	even
 
 .Frame25:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/25.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/25.bin"
 	even
 
 .Frame26:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/26.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/26.bin"
 	even
 
 .Frame27:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/27.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/27.bin"
 	even
 
 .Frame28:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/28.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/28.bin"
 	even
 
 .Frame29:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/29.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/29.bin"
 	even
 
 .Frame30:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/30.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/30.bin"
 	even
 
 .Frame31:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/31.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/31.bin"
 	even
 
 .Frame32:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/32.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/32.bin"
 	even
 
 .Frame33:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/33.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/33.bin"
 	even
 
 .Frame34:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/34.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/34.bin"
 	even
 
 .Frame35:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/35.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/35.bin"
 	even
 
 .Frame36:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/36.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/36.bin"
 	even
 
 .Frame37:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/37.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/37.bin"
 	even
 
 .Frame38:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/38.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/38.bin"
 	even
 
 .Frame39:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/39.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/39.bin"
 	even
 
 .Frame40:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/40.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/40.bin"
 	even
 
 .Frame41:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/41.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/41.bin"
 	even
 
 .Frame42:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/42.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/42.bin"
 	even
 
 .Frame43:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/43.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/43.bin"
 	even
 
 .Frame44:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/44.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/44.bin"
 	even
 
 .Frame45:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/45.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/45.bin"
 	even
 
 .Frame46:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/46.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/46.bin"
 	even
 
 .Frame47:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/47.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/47.bin"
 	even
 
 .Frame48:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/48.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/48.bin"
 	even
 
 .Frame49:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/49.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/49.bin"
 	even
 
 .Frame50:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/50.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/50.bin"
 	even
 
 .Frame51:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/51.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/51.bin"
 	even
 
 .Frame52:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/52.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/52.bin"
 	even
 
 .Frame53:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/53.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/53.bin"
 	even
 
 .Frame54:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/54.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/54.bin"
 	even
 
 .Frame55:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/55.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/55.bin"
 	even
 
 .Frame56:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/56.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/56.bin"
 	even
 
 .Frame57:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/57.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/57.bin"
 	even
 
 .Frame58:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/58.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/58.bin"
 	even
 
 .Frame59:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/59.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/59.bin"
 	even
 
 .Frame60:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/60.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/60.bin"
 	even
 
 .Frame61:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/61.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/61.bin"
 	even
 
 .Frame62:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/62.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/62.bin"
 	even
 
 .Frame63:
-	binclude	"Special Stage/Objects/Sonic/Data/Frames/63.bin"
+	incbin	"Special Stage/Objects/Sonic/Data/Frames/63.bin"
 	even
 
 .Frame64:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/64.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/64.bin"
 	;even
 
 .Frame65:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/65.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/65.bin"
 	;even
 
 .Frame66:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/66.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/66.bin"
 	;even
 
 .Frame67:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/67.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/67.bin"
 	;even
 
 .Frame68:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/68.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/68.bin"
 	;even
 
 .Frame69:
-	;binclude	"Special Stage/Objects/Sonic/Data/Frames/69.bin"
+	;incbin	"Special Stage/Objects/Sonic/Data/Frames/69.bin"
 	;even

@@ -664,7 +664,7 @@ ObjAmyRose_ResetPal:
 
 ; -------------------------------------------------------------------------
 Pal_AmyRose:
-	binclude	"Level/Palmtree Panic/Objects/Amy Rose/Data/Palette.bin"
+	incbin	"Level/Palmtree Panic/Objects/Amy Rose/Data/Palette.bin"
 	even
 ; -------------------------------------------------------------------------
 

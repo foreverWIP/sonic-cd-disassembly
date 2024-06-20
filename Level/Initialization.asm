@@ -70,7 +70,7 @@ Start:
 	move.l	d7,(a6)+
 	dbf	d6,.ClearRAM			; Clear until finished
 
-	move.b	REG_VERSION,d0			; Get hardware region
+	move.b	VERSION,d0			; Get hardware region
 	andi.b	#$C0,d0
 	move.b	d0,versionCache
 

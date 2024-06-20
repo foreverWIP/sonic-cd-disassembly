@@ -251,15 +251,15 @@ PLC_Signpost:
 	if ROMHACK=0
 	if DEMO=0
 		if REGION=USA
-		binclude	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present, U).bin"
+		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present, U).bin"
 		else
-		binclude	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present, JE).bin"
+		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present, JE).bin"
 		endif
 	else
 		if REGION=USA
-		binclude	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present Demo, U).bin"
+		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present Demo, U).bin"
 		else
-		binclude	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present Demo, JE).bin"
+		incbin	"Level/Palmtree Panic/Data/Padding/1 (Act 1 Present Demo, JE).bin"
 		endif
 	endif
 	else
@@ -270,18 +270,18 @@ PLC_Signpost:
 
 LevelChunks:
 	if DEMO=0
-		binclude	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin"
+		incbin	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin"
 		even
 	else
 		if REGION=USA
-		binclude	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin",0,DemoDataRel
-		binclude	"Level/Palmtree Panic/Data/Demo (Act 1 Present, U).bin"
-		binclude	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin", &
+		incbin	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin",0,DemoDataRel
+		incbin	"Level/Palmtree Panic/Data/Demo (Act 1 Present, U).bin"
+		incbin	"Level/Palmtree Panic/Data/Chunks (Act 1 Present).bin", &
 			DemoDataRel+filesize("Level/Palmtree Panic/Data/Demo (Act 1 Present, U).bin")
 		else
-		binclude	"Level/Palmtree Panic/Data/Chunks (Act 1 Present Demo, JE).bin",0,DemoDataRel
-		binclude	"Level/Palmtree Panic/Data/Demo (Act 1 Present, JE).bin"
-		binclude	"Level/Palmtree Panic/Data/Chunks (Act 1 Present Demo, JE).bin", &
+		incbin	"Level/Palmtree Panic/Data/Chunks (Act 1 Present Demo, JE).bin",0,DemoDataRel
+		incbin	"Level/Palmtree Panic/Data/Demo (Act 1 Present, JE).bin"
+		incbin	"Level/Palmtree Panic/Data/Chunks (Act 1 Present Demo, JE).bin", &
 			DemoDataRel+filesize("Level/Palmtree Panic/Data/Demo (Act 1 Present, JE).bin")
 		endif
 	endif
@@ -292,79 +292,79 @@ MapSpr_3DRamp:
 	include	"Level/Palmtree Panic/Objects/3D Ramp/Data/Mappings (Booster).asm"
 	even
 Art_Sonic:
-	binclude	"Level/_Objects/Sonic/Data/Art.bin"
+	incbin	"Level/_Objects/Sonic/Data/Art.bin"
 	even
 DPLC_Sonic:
 	include	"Level/_Objects/Sonic/Data/DPLCs.asm"
 	even
 Art_Points:
-	binclude	"Level/_Objects/HUD and Points/Data/Art (Points).nem"
+	incbin	"Level/_Objects/HUD and Points/Data/Art (Points).nem"
 	even
 Art_FlowerCapsule:
-	binclude	"Level/_Objects/Level End/Data/Art (Flower Capsule).nem"
+	incbin	"Level/_Objects/Level End/Data/Art (Flower Capsule).nem"
 	even
 Art_BigRing:
-	binclude	"Level/_Objects/Level End/Data/Art (Big Ring).nem"
+	incbin	"Level/_Objects/Level End/Data/Art (Big Ring).nem"
 	even
 Art_GoalPost:
-	binclude	"Level/_Objects/Level End/Data/Art (Goal Post).nem"
+	incbin	"Level/_Objects/Level End/Data/Art (Goal Post).nem"
 	even
 Art_Signpost:
-	binclude	"Level/_Objects/Level End/Data/Art (Signpost).nem"
+	incbin	"Level/_Objects/Level End/Data/Art (Signpost).nem"
 	even
 Art_Results:
-	binclude	"Level/_Objects/Results/Data/Art.nem"
+	incbin	"Level/_Objects/Results/Data/Art.nem"
 	even
 Art_TimeOver:
-	binclude	"Level/_Objects/Game Over/Data/Art (Time Over).nem"
+	incbin	"Level/_Objects/Game Over/Data/Art (Time Over).nem"
 	even
 Art_GameOver:
-	binclude	"Level/_Objects/Game Over/Data/Art (Game Over).nem"
+	incbin	"Level/_Objects/Game Over/Data/Art (Game Over).nem"
 	even
 Art_TitleCard:
-	binclude	"Level/_Objects/Title Card/Data/Art.nem"
+	incbin	"Level/_Objects/Title Card/Data/Art.nem"
 	even
 Art_Shield:
-	binclude	"Level/_Objects/Powerup/Data/Art (Shield).bin"
+	incbin	"Level/_Objects/Powerup/Data/Art (Shield).bin"
 	even
 Art_InvStars:
-	binclude	"Level/_Objects/Powerup/Data/Art (Invincibility Stars).bin"
+	incbin	"Level/_Objects/Powerup/Data/Art (Invincibility Stars).bin"
 	even
 Art_TimeStars:
-	binclude	"Level/_Objects/Powerup/Data/Art (Time Warp Stars).bin"
+	incbin	"Level/_Objects/Powerup/Data/Art (Time Warp Stars).bin"
 	even
 Art_DiagonalSpring:
-	binclude	"Level/_Objects/Spring/Data/Art (Diagonal).nem"
+	incbin	"Level/_Objects/Spring/Data/Art (Diagonal).nem"
 	even
 Art_Springs:
-	binclude	"Level/_Objects/Spring/Data/Art (Normal).nem"
+	incbin	"Level/_Objects/Spring/Data/Art (Normal).nem"
 	even
 Art_MonitorTimePosts:
-	binclude	"Level/_Objects/Monitor and Time Post/Data/Art.nem"
+	incbin	"Level/_Objects/Monitor and Time Post/Data/Art.nem"
 	even
 Art_Explosions:
-	binclude	"Level/_Objects/Explosion/Data/Art.nem"
+	incbin	"Level/_Objects/Explosion/Data/Art.nem"
 	even
 Art_Rings:
-	binclude	"Level/_Objects/Ring/Data/Art.nem"
+	incbin	"Level/_Objects/Ring/Data/Art.nem"
 	even
 Art_LifeIcon:
-	binclude	"Level/_Objects/HUD and Points/Data/Art (Life Icon).bin"
+	incbin	"Level/_Objects/HUD and Points/Data/Art (Life Icon).bin"
 	even
 Art_HUDNumbers:
-	binclude	"Level/_Objects/HUD and Points/Data/Art (Numbers).bin"
+	incbin	"Level/_Objects/HUD and Points/Data/Art (Numbers).bin"
 	even
 Art_HUD:
-	binclude	"Level/_Objects/HUD and Points/Data/Art (HUD).nem"
+	incbin	"Level/_Objects/HUD and Points/Data/Art (HUD).nem"
 	even
 Art_Checkpoint:
-	binclude	"Level/_Objects/Checkpoint/Data/Art.Nem"
+	incbin	"Level/_Objects/Checkpoint/Data/Art.Nem"
 	even
 Art_LogShadowUnused:
-	binclude	"Level/Palmtree Panic/Objects/Log Shadow/Data/Art (Withered).nem"
+	incbin	"Level/Palmtree Panic/Objects/Log Shadow/Data/Art (Withered).nem"
 	even
 Art_LogShadow:
-	binclude	"Level/Palmtree Panic/Objects/Log Shadow/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Log Shadow/Data/Art.nem"
 	even
 Ani_Flower:
 	include	"Level/Palmtree Panic/Objects/Flower/Data/Animations.asm"
@@ -373,73 +373,73 @@ MapSpr_Flower:
 	include	"Level/Palmtree Panic/Objects/Flower/Data/Mappings.asm"
 	even
 Art_Flower:
-	binclude	"Level/Palmtree Panic/Objects/Flower/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Flower/Data/Art.nem"
 	even
 Art_TitleCardText:
-	binclude	"Level/Palmtree Panic/Objects/Title Card/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Title Card/Art.nem"
 	even
 Art_Platform:
-	binclude	"Level/Palmtree Panic/Objects/Platform/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Platform/Data/Art.nem"
 	even
 Art_Boulder:
-	binclude	"Level/_Objects/Boulder/Data/Art.nem"
+	incbin	"Level/_Objects/Boulder/Data/Art.nem"
 	even
 Art_FloatBlock:
-	binclude	"Level/_Objects/Floating Block/Data/Art.nem"
+	incbin	"Level/_Objects/Floating Block/Data/Art.nem"
 	even
 Art_SpringWheel:
-	binclude	"Level/_Objects/Spring/Data/Art (Wheel).nem"
+	incbin	"Level/_Objects/Spring/Data/Art (Wheel).nem"
 	even
 Art_SpinningDisc:
-	binclude	"Level/Palmtree Panic/Objects/Spinning Disc/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Spinning Disc/Data/Art.nem"
 	even
 Art_TunnelWaterfall:
-	binclude	"Level/_Objects/Spin Tunnel/Data/Art (Waterfall Splash).nem"
+	incbin	"Level/_Objects/Spin Tunnel/Data/Art (Waterfall Splash).nem"
 	even
 Art_Waterfall:
-	binclude	"Level/Palmtree Panic/Objects/Effects/Data/Art (Waterfall).nem"
+	incbin	"Level/Palmtree Panic/Objects/Effects/Data/Art (Waterfall).nem"
 	even
 Art_TunnelDoor:
-	binclude	"Level/Palmtree Panic/Objects/Tunnel Door/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Tunnel Door/Data/Art.nem"
 	even
 Art_TunnelDoorSplash:
-	binclude	"Level/_Objects/Spin Tunnel/Data/Art (Door Splash).nem"
+	incbin	"Level/_Objects/Spin Tunnel/Data/Art (Door Splash).nem"
 	even
 Art_Anton:
-	binclude	"Level/Palmtree Panic/Objects/Anton/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Anton/Data/Art.nem"
 	even
 Art_Mosqui:
-	binclude	"Level/Palmtree Panic/Objects/Mosqui/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Mosqui/Data/Art.nem"
 	even
 Art_PataBata:
-	binclude	"Level/Palmtree Panic/Objects/Pata-Bata/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Pata-Bata/Data/Art.nem"
 	even
 Art_TagaTaga:
-	binclude	"Level/Palmtree Panic/Objects/Taga-Taga/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Taga-Taga/Data/Art.nem"
 	even
 Art_Tamabboh:
-	binclude	"Level/Palmtree Panic/Objects/Tamabboh/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Tamabboh/Data/Art.nem"
 	even
 Art_Springboard:
-	binclude	"Level/Palmtree Panic/Objects/Springboard/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Springboard/Data/Art.nem"
 	even
 Art_Button:
-	binclude	"Level/Palmtree Panic/Data/Unused/Art (Button).nem"
+	incbin	"Level/Palmtree Panic/Data/Unused/Art (Button).nem"
 	even
 Art_Spikes:
-	binclude	"Level/_Objects/Spikes/Data/Art.nem"
+	incbin	"Level/_Objects/Spikes/Data/Art.nem"
 	even
 Art_SwingingPlatform:
-	binclude	"Level/Palmtree Panic/Data/Unused/Art (Swinging Platform).nem"
+	incbin	"Level/Palmtree Panic/Data/Unused/Art (Swinging Platform).nem"
 	even
 Art_Animals:
-	binclude	"Level/Palmtree Panic/Objects/Animal/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Animal/Data/Art.nem"
 	even
 Art_SpinningDiscDrill:
-	binclude	"Level/Palmtree Panic/Data/Unused/Art (Spinning Disc Drill).nem"
+	incbin	"Level/Palmtree Panic/Data/Unused/Art (Spinning Disc Drill).nem"
 	even
 Art_RobotGenWithered:
-	binclude	"Level/_Objects/Robot Generator/Data/Art (Withered).nem"
+	incbin	"Level/_Objects/Robot Generator/Data/Art (Withered).nem"
 	even
 
 ; -------------------------------------------------------------------------
@@ -447,16 +447,16 @@ Art_RobotGenWithered:
 ; -------------------------------------------------------------------------
 
 ColAngleMap:
-	binclude	"Level/_Data/Collision Angles.bin"
+	incbin	"Level/_Data/Collision Angles.bin"
 	even
 ColHeightMap:
-	binclude	"Level/_Data/Collision Height Map.bin"
+	incbin	"Level/_Data/Collision Height Map.bin"
 	even
 ColWidthMap:
-	binclude	"Level/_Data/Collision Width Map.bin"
+	incbin	"Level/_Data/Collision Width Map.bin"
 	even
 LevelCollision:
-	binclude	"Level/Palmtree Panic/Data/Collision (Act 1 Present).bin"
+	incbin	"Level/Palmtree Panic/Data/Collision (Act 1 Present).bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -478,29 +478,29 @@ LevelLayouts:
 	dc.w .Null-LevelLayouts, .Null-LevelLayouts, .Null-LevelLayouts
 
 .FG:
-	binclude	"Level/Palmtree Panic/Data/Foreground (Act 1 Present).bin"
+	incbin	"Level/Palmtree Panic/Data/Foreground (Act 1 Present).bin"
 	even
 .BG:
-	binclude	"Level/Palmtree Panic/Data/Background (Act 1 Present).bin"
+	incbin	"Level/Palmtree Panic/Data/Background (Act 1 Present).bin"
 	even
 .Null:
 
 ; -------------------------------------------------------------------------
 
 Art_SonicHole:
-	binclude	"Level/Palmtree Panic/Objects/Tunnel Path/Data/Art (Hole).nem"
+	incbin	"Level/Palmtree Panic/Objects/Tunnel Path/Data/Art (Hole).nem"
 	even
 Art_3DPlant:
-	binclude	"Level/Palmtree Panic/Objects/3D Ramp/Data/Art (Plant).nem"
+	incbin	"Level/Palmtree Panic/Objects/3D Ramp/Data/Art (Plant).nem"
 	even
 Art_3DRampBoost:
-	binclude	"Level/Palmtree Panic/Objects/3D Ramp/Data/Art (Booster).nem"
+	incbin	"Level/Palmtree Panic/Objects/3D Ramp/Data/Art (Booster).nem"
 	even
 LevelBlocks:
-	binclude	"Level/Palmtree Panic/Data/Blocks (Act 1 Present).nem"
+	incbin	"Level/Palmtree Panic/Data/Blocks (Act 1 Present).nem"
 	even
 Art_LevelTiles:
-	binclude	"Level/Palmtree Panic/Data/Tiles (Act 1 Present).nem"
+	incbin	"Level/Palmtree Panic/Data/Tiles (Act 1 Present).nem"
 	even
 Ani_Powerup:
 	include	"Level/_Objects/Powerup/Data/Animations.asm"
@@ -557,10 +557,10 @@ Ani_FlowerCapsule:
 ;	include	"Level/_Objects/Level End/Data/Animations (Flower Capsule).asm"
 ;	even
 Art_Projector:
-;	binclude	"Level/Palmtree Panic/Objects/Projector/Data/Art.nem"
+;	incbin	"Level/Palmtree Panic/Objects/Projector/Data/Art.nem"
 ;	even
 Art_AmyRose:
-	binclude	"Level/Palmtree Panic/Objects/Amy Rose/Data/Art.nem"
+	incbin	"Level/Palmtree Panic/Objects/Amy Rose/Data/Art.nem"
 	even
 MapSpr_AmyRose:	
 	include	"Level/Palmtree Panic/Objects/Amy Rose/Data/Mappings.asm"
@@ -575,7 +575,7 @@ Ani_AmyRose:
 ; -------------------------------------------------------------------------
 
 	if ROMHACK=0
-	binclude	"Level/Palmtree Panic/Data/Padding/2 (Act 1 Present).bin"
+	incbin	"Level/Palmtree Panic/Data/Padding/2 (Act 1 Present).bin"
 	else
 	align $40000
 	endif

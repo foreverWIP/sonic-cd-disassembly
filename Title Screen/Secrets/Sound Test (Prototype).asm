@@ -715,7 +715,7 @@ VDPRegsEnd:
 	even
 
 Pal_SelScreen:
-	binclude	"Title Screen/Secrets/Data/Palette.bin"
+	incbin	"Title Screen/Secrets/Data/Palette.bin"
 Pal_SelScreen_End:
 	even
 	
@@ -748,11 +748,11 @@ Map_CDDATextSel:
 	dc.w $2027, $2026, $0000, $202E, $2021, $203C
 
 Art_SelScreen:
-	binclude	"Title Screen/Secrets/Data/Art.nem"
+	incbin	"Title Screen/Secrets/Data/Art.nem"
 	even
 
 Map_SelScreenBg:
-	binclude	"Title Screen/Secrets/Data/Background Mappings (H40).bin"
+	incbin	"Title Screen/Secrets/Data/Background Mappings (H40).bin"
 	even
 
 ; -------------------------------------------------------------------------
