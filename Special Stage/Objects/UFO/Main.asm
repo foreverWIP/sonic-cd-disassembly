@@ -505,7 +505,7 @@ SpawnTimeUFO:
 ; -------------------------------------------------------------------------
 
 TimeUFOPath:
-	incbin	"Special Stage/Data/Time UFO Path.bin"
+	binclude	"Special Stage/Data/Time UFO Path.bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -585,195 +585,195 @@ UFOPaths_SS8:
 ; -------------------------------------------------------------------------
 
 UFOPath_SS1_1:
-	incbin	"Special Stage/Data/Stage 1/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 1.bin"
 	even
 
 UFOPath_SS1_2:
-	incbin	"Special Stage/Data/Stage 1/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 2.bin"
 	even
 
 UFOPath_SS1_3:
-	incbin	"Special Stage/Data/Stage 1/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 3.bin"
 	even
 
 UFOPath_SS1_4:
-	incbin	"Special Stage/Data/Stage 1/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 4.bin"
 	even
 
 UFOPath_SS1_5:
-	incbin	"Special Stage/Data/Stage 1/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 5.bin"
 	even
 
 UFOPath_SS1_6:
-	incbin	"Special Stage/Data/Stage 1/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 1/UFO 6.bin"
 	even
 
 UFOPath_SS2_1:
-	incbin	"Special Stage/Data/Stage 2/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 1.bin"
 	even
 
 UFOPath_SS2_2:
-	incbin	"Special Stage/Data/Stage 2/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 2.bin"
 	even
 
 UFOPath_SS2_3:
-	incbin	"Special Stage/Data/Stage 2/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 3.bin"
 	even
 
 UFOPath_SS2_4:
-	incbin	"Special Stage/Data/Stage 2/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 4.bin"
 	even
 
 UFOPath_SS2_5:
-	incbin	"Special Stage/Data/Stage 2/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 5.bin"
 	even
 
 UFOPath_SS2_6:
-	incbin	"Special Stage/Data/Stage 2/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 2/UFO 6.bin"
 	even
 
 UFOPath_SS3_1:
-	incbin	"Special Stage/Data/Stage 3/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 1.bin"
 	even
 
 UFOPath_SS3_2:
-	incbin	"Special Stage/Data/Stage 3/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 2.bin"
 	even
 
 UFOPath_SS3_3:
-	incbin	"Special Stage/Data/Stage 3/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 3.bin"
 	even
 
 UFOPath_SS3_4:
-	incbin	"Special Stage/Data/Stage 3/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 4.bin"
 	even
 
 UFOPath_SS3_5:
-	incbin	"Special Stage/Data/Stage 3/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 5.bin"
 	even
 
 UFOPath_SS3_6:
-	incbin	"Special Stage/Data/Stage 3/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 3/UFO 6.bin"
 	even
 
 UFOPath_SS4_1:
-	incbin	"Special Stage/Data/Stage 4/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 1.bin"
 	even
 
 UFOPath_SS4_2:
-	incbin	"Special Stage/Data/Stage 4/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 2.bin"
 	even
 
 UFOPath_SS4_3:
-	incbin	"Special Stage/Data/Stage 4/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 3.bin"
 	even
 
 UFOPath_SS4_4:
-	incbin	"Special Stage/Data/Stage 4/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 4.bin"
 	even
 
 UFOPath_SS4_5:
-	incbin	"Special Stage/Data/Stage 4/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 5.bin"
 	even
 
 UFOPath_SS4_6:
-	incbin	"Special Stage/Data/Stage 4/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 4/UFO 6.bin"
 	even
 
 UFOPath_SS5_1:
-	incbin	"Special Stage/Data/Stage 5/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 1.bin"
 	even
 
 UFOPath_SS5_2:
-	incbin	"Special Stage/Data/Stage 5/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 2.bin"
 	even
 
 UFOPath_SS5_3:
-	incbin	"Special Stage/Data/Stage 5/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 3.bin"
 	even
 
 UFOPath_SS5_4:
-	incbin	"Special Stage/Data/Stage 5/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 4.bin"
 	even
 
 UFOPath_SS5_5:
-	incbin	"Special Stage/Data/Stage 5/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 5.bin"
 	even
 
 UFOPath_SS5_6:
-	incbin	"Special Stage/Data/Stage 5/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 5/UFO 6.bin"
 	even
 
 UFOPath_SS6_1:
-	incbin	"Special Stage/Data/Stage 6/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 1.bin"
 	even
 
 UFOPath_SS6_2:
-	incbin	"Special Stage/Data/Stage 6/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 2.bin"
 	even
 
 UFOPath_SS6_3:
-	incbin	"Special Stage/Data/Stage 6/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 3.bin"
 	even
 
 UFOPath_SS6_4:
-	incbin	"Special Stage/Data/Stage 6/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 4.bin"
 	even
 
 UFOPath_SS6_5:
-	incbin	"Special Stage/Data/Stage 6/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 5.bin"
 	even
 
 UFOPath_SS6_6:
-	incbin	"Special Stage/Data/Stage 6/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 6/UFO 6.bin"
 	even
 
 UFOPath_SS7_1:
-	incbin	"Special Stage/Data/Stage 7/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 1.bin"
 	even
 
 UFOPath_SS7_2:
-	incbin	"Special Stage/Data/Stage 7/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 2.bin"
 	even
 
 UFOPath_SS7_3:
-	incbin	"Special Stage/Data/Stage 7/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 3.bin"
 	even
 
 UFOPath_SS7_4:
-	incbin	"Special Stage/Data/Stage 7/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 4.bin"
 	even
 
 UFOPath_SS7_5:
-	incbin	"Special Stage/Data/Stage 7/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 5.bin"
 	even
 
 UFOPath_SS7_6:
-	incbin	"Special Stage/Data/Stage 7/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 7/UFO 6.bin"
 	even
 
 UFOPath_SS8_1:
-	incbin	"Special Stage/Data/Stage 8/UFO 1.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 1.bin"
 	even
 
 UFOPath_SS8_2:
-	incbin	"Special Stage/Data/Stage 8/UFO 2.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 2.bin"
 	even
 
 UFOPath_SS8_3:
-	incbin	"Special Stage/Data/Stage 8/UFO 3.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 3.bin"
 	even
 
 UFOPath_SS8_4:
-	incbin	"Special Stage/Data/Stage 8/UFO 4.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 4.bin"
 	even
 
 UFOPath_SS8_5:
-	incbin	"Special Stage/Data/Stage 8/UFO 5.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 5.bin"
 	even
 
 UFOPath_SS8_6:
-	incbin	"Special Stage/Data/Stage 8/UFO 6.bin"
+	binclude	"Special Stage/Data/Stage 8/UFO 6.bin"
 	even
 
 ; -------------------------------------------------------------------------

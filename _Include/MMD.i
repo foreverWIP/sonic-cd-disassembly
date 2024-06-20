@@ -16,17 +16,25 @@ MMDSUBM		EQU	1<<MMDSUB		; Sub CPU Word RAM access flag mask
 ; MMD header structure
 ; -------------------------------------------------------------------------
 
-	rsreset
-mmdFlags	rs.b	1			; Flags
-		rs.b	1
-mmdOrigin	rs.l	1			; Origin address
-mmdSize		rs.w	1			; Size of file data
-mmdEntry	rs.l	1			; Entry address
-mmdHInt		rs.l	1			; H-BLANK interrupt address
-mmdVInt		rs.l	1			; V-BLANK interrupt address
-		rs.b	$100-__rs
-mmdFile		rs.b	0			; Start of file data
-MMDHEADSZ	rs.b	0			; Size of structure
+	; rsreset
+; mmdFlags	rs.b	1			; Flags
+		; rs.b	1
+; mmdOrigin	rs.l	1			; Origin address
+; mmdSize		rs.w	1			; Size of file data
+; mmdEntry	rs.l	1			; Entry address
+; mmdHInt		rs.l	1			; H-BLANK interrupt address
+; mmdVInt		rs.l	1			; V-BLANK interrupt address
+		; rs.b	$100-__rs
+; mmdFile		rs.b	0			; Start of file data
+; MMDHEADSZ	rs.b	0			; Size of structure
+mmdFlags = 0
+mmdOrigin = 2
+mmdSize = 6
+mmdEntry = 8
+mmdHInt = 12
+mmdVInt = 16
+mmdFile = $100
+MMDHEADSZ = mmdFile
 
 ; -------------------------------------------------------------------------
 ; MMD header

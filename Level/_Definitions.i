@@ -28,7 +28,7 @@ c = 0
 	rept	oSize
 oVar\$c		EQU	c
 		c: = c+1
-	endr
+	endm
 
 	rsreset
 oID		rs.b	1			; ID

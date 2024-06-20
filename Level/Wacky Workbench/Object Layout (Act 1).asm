@@ -14,7 +14,7 @@ ObjectLayouts:
 	dc.w	$FFFF, 0, 0, 0
 	
 .Layout:
-	incbin	"Level/Wacky Workbench/Data/Objects (Act 1).bin"
+	binclude	"Level/Wacky Workbench/Data/Objects (Act 1).bin"
 
 .Null:
 	dc.w	$FFFF, 0, 0

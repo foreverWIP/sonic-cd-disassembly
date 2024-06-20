@@ -1591,7 +1591,7 @@ InitMD:
 ; -------------------------------------------------------------------------
 
 .Palette:
-	incbin	"DA Garden/Data/Palette.bin"
+	binclude	"DA Garden/Data/Palette.bin"
 	even
 
 .VDPRegs:
@@ -3577,35 +3577,35 @@ MapSpr_TrackTitle:
 	include	"DA Garden/Data/Volcano Animation.asm"
 	
 Art_DAGardenBg:
-	incbin	"DA Garden/Data/Art (Background).nem"
+	binclude	"DA Garden/Data/Art (Background).nem"
 	even
 	
 Map_DAGardenBg:
-	incbin	"DA Garden/Data/Background Mappings.kos"
+	binclude	"DA Garden/Data/Background Mappings.kos"
 	even
 	
 Art_Flicky:
-	incbin	"DA Garden/Objects/Flicky/Data/Art.nem"
+	binclude	"DA Garden/Objects/Flicky/Data/Art.nem"
 	even
 	
 Art_Star:
-	incbin	"DA Garden/Objects/Star/Data/Art.nem"
+	binclude	"DA Garden/Objects/Star/Data/Art.nem"
 	even
 	
 Art_Eggman:
-	incbin	"DA Garden/Objects/Eggman/Data/Art.nem"
+	binclude	"DA Garden/Objects/Eggman/Data/Art.nem"
 	even
 	
 Art_UFO:
-	incbin	"DA Garden/Objects/UFO/Data/Art.nem"
+	binclude	"DA Garden/Objects/UFO/Data/Art.nem"
 	even
 	
 Art_MetalSonic:
-	incbin	"DA Garden/Objects/Metal Sonic/Data/Art.nem"
+	binclude	"DA Garden/Objects/Metal Sonic/Data/Art.nem"
 	even
 	
 Art_Tails:
-	incbin	"DA Garden/Objects/Tails/Data/Art.nem"
+	binclude	"DA Garden/Objects/Tails/Data/Art.nem"
 	even
 
 ; -------------------------------------------------------------------------

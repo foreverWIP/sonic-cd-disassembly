@@ -32,31 +32,6 @@ pad	=	((\bound)-((*)%(\bound)))%(\bound)
 	endm
 
 ; -------------------------------------------------------------------------
-; Pad RS to even address
-; -------------------------------------------------------------------------
-
-RSEVEN macros
-	rs.b	__rs&1
-
-; -------------------------------------------------------------------------
-; Generate repeated RS structure entries
-; -------------------------------------------------------------------------
-; PARAMETERS:
-;	name  - Entry name base
-;	count - Number of entries
-;	size  - Size of entry
-; -------------------------------------------------------------------------
-
-RSRPT macro name, count, size
-	local cnt
-cnt	=	0
-	rept	\count
-\name\\$cnt	rs.\0	\size
-cnt		=	cnt+1
-	endr
-	endm
-
-; -------------------------------------------------------------------------
 ; Store string with static size
 ; -------------------------------------------------------------------------
 ; PARAMETERS:
@@ -94,7 +69,7 @@ mask	=	10
 num2		=	num2/10
 mask		=	mask*10
 digits2		=	digits2+1
-	endw
+	endm
 num2	=	(\num)%mask
 	dcb.b	(\digits)-strlen("\#num2"), "0"
 	dc.b	"\#num2"

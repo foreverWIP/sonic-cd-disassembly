@@ -559,12 +559,12 @@ DrawResultsBase:
 ; -------------------------------------------------------------------------
 
 Pal_Stage:
-	incbin	"Special Stage/Data/Palette.bin"
+	binclude	"Special Stage/Data/Palette.bin"
 Pal_Stage_End:
 	even
 	
 Pal_Results:
-	incbin	"Special Stage/Data/Palette (Results).bin"
+	binclude	"Special Stage/Data/Palette (Results).bin"
 Pal_Results_End:
 	even
 
@@ -2235,7 +2235,7 @@ CheckLineScroll:
 
 	if REGION=USA
 Art_ExtraPlayersText:
-		incbin	"Special Stage/Data/Extra Players Text Art.nem"
+		binclude	"Special Stage/Data/Extra Players Text Art.nem"
 		even
 	endif
 
@@ -4715,7 +4715,7 @@ Map_BonusZero:
 
 Map_ResultsBG:
 	dc.w	1				; Compressed
-	incbin	"Special Stage/Data/Results Background Map.kos"
+	binclude	"Special Stage/Data/Results Background Map.kos"
 	even
 
 Map_ExtraPlayersText:
@@ -4739,63 +4739,63 @@ Map_HUDNormal:
 	dc.w	0, 0, $87F6, $87F7, $87F8, $87E9, $87E9, 0, 0, 0, $87F9, $87FA, $87FB, 0, 0, 0, $87E9, $87E9, 0, 0, 0, 0, 0, $87FC, $87FD, $87FE, $87FF, $87E9, $87E9, $87E9, 0, 0
 
 Art_Results:
-	incbin	"Special Stage/Data/Results Art.nem"
+	binclude	"Special Stage/Data/Results Art.nem"
 	even
 
 Art_TimeStone:
-	incbin	"Special Stage/Objects/Time Stone/Data/Art.nem"
+	binclude	"Special Stage/Objects/Time Stone/Data/Art.nem"
 	even
 
 Art_Items:
-	incbin	"Special Stage/Objects/Item/Data/Art.nem"
+	binclude	"Special Stage/Objects/Item/Data/Art.nem"
 	even
 
 Art_Explosion:
-	incbin	"Special Stage/Objects/Explosion/Data/Art.nem"
+	binclude	"Special Stage/Objects/Explosion/Data/Art.nem"
 	even
 
 Art_HUD:
-	incbin	"Special Stage/Data/HUD Art.nem"
+	binclude	"Special Stage/Data/HUD Art.nem"
 	even
 
 Art_TitleCard:
-	incbin	"Special Stage/Objects/Title Card/Data/Art.nem"
+	binclude	"Special Stage/Objects/Title Card/Data/Art.nem"
 	even
 
 Art_Splash:
-	incbin	"Special Stage/Objects/Splash/Data/Art.nem"
+	binclude	"Special Stage/Objects/Splash/Data/Art.nem"
 	even
 
 Art_Shadow:
-	incbin	"Special Stage/Objects/Shadow/Data/Art.nem"
+	binclude	"Special Stage/Objects/Shadow/Data/Art.nem"
 	even
 
 Art_UFO:
-	incbin	"Special Stage/Objects/UFO/Data/Art.nem"
+	binclude	"Special Stage/Objects/UFO/Data/Art.nem"
 	even
 
 Stage1Demo:
 	if REGION<>EUROPE
-		incbin	"Special Stage/Data/Stage 1/Demo (NTSC).kos"
+		binclude	"Special Stage/Data/Stage 1/Demo (NTSC).kos"
 	else
-		incbin	"Special Stage/Data/Stage 1/Demo (PAL).kos"
+		binclude	"Special Stage/Data/Stage 1/Demo (PAL).kos"
 	endif
 	even
 
 Stage6Demo:
 	if REGION<>EUROPE
-		incbin	"Special Stage/Data/Stage 6/Demo (NTSC).kos"
+		binclude	"Special Stage/Data/Stage 6/Demo (NTSC).kos"
 	else
-		incbin	"Special Stage/Data/Stage 6/Demo (PAL).kos"
+		binclude	"Special Stage/Data/Stage 6/Demo (PAL).kos"
 	endif
 	even
 	
 Art_SS6BGWater:
-	incbin	"Special Stage/Data/Stage 6/Background Art (Water).nem"
+	binclude	"Special Stage/Data/Stage 6/Background Art (Water).nem"
 	even
 Map_SS6BGB2:
 	dc.w	1				; Compressed
-	incbin	"Special Stage/Data/Stage 6/Background Chunk B2.kos"
+	binclude	"Special Stage/Data/Stage 6/Background Chunk B2.kos"
 	even
 
 ; -------------------------------------------------------------------------

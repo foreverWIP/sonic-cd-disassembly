@@ -355,7 +355,7 @@ InitMD:
 ; -------------------------------------------------------------------------
 
 .Palette:
-	incbin	"Backup RAM/Initialization/Data/Palette.bin"
+	binclude	"Backup RAM/Initialization/Data/Palette.bin"
 .PaletteEnd:
 	even
 
@@ -1462,11 +1462,11 @@ EniDec_ChkGetNextByte:
 ; -------------------------------------------------------------------------
 
 Art_Eggman:
-	incbin	"Backup RAM/Initialization/Data/Eggman Art.nem"
+	binclude	"Backup RAM/Initialization/Data/Eggman Art.nem"
 	even
 
 Map_Eggman:
-	incbin	"Backup RAM/Initialization/Data/Eggman Mappings.eni"
+	binclude	"Backup RAM/Initialization/Data/Eggman Mappings.eni"
 	even
 
 ; -------------------------------------------------------------------------
@@ -1474,23 +1474,23 @@ Map_Eggman:
 	if REGION=JAPAN
 	
 Art_Message:
-		incbin	"Backup RAM/Initialization/Data/Message Art (Japanese).nem"
+		binclude	"Backup RAM/Initialization/Data/Message Art (Japanese).nem"
 		even
 
 Map_DataCorrupt:
-		incbin	"Backup RAM/Initialization/Data/Message (Data Corrupt, Japanese).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Data Corrupt, Japanese).eni"
 		even
 	
 Map_IntUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Internal Unformatted, Japanese).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Internal Unformatted, Japanese).eni"
 		even
 
 Map_CartUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Cart Unformatted, Japanese).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Cart Unformatted, Japanese).eni"
 		even
 
 Map_BuRAMFull:
-		incbin	"Backup RAM/Initialization/Data/Message (RAM Full, Japanese).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (RAM Full, Japanese).eni"
 		even
 		
 ; -------------------------------------------------------------------------
@@ -1498,31 +1498,31 @@ Map_BuRAMFull:
 	elseif REGION=USA
 	
 Art_Message:
-		incbin	"Backup RAM/Initialization/Data/Message Art (English).nem"
+		binclude	"Backup RAM/Initialization/Data/Message Art (English).nem"
 		even
 
 Map_DataCorrupt:
-		incbin	"Backup RAM/Initialization/Data/Message (Data Corrupt, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Data Corrupt, English).eni"
 		even
 
 Map_IntUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Internal Unformatted, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Internal Unformatted, English).eni"
 		even
 
 Map_CartUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Cart Unformatted, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Cart Unformatted, English).eni"
 		even
 
 Map_BuRAMFull:
-		incbin	"Backup RAM/Initialization/Data/Message (RAM Full, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (RAM Full, English).eni"
 		even
 	
 Art_MessageUSA:
-		incbin	"Backup RAM/Initialization/Data/Message Art (USA).nem"
+		binclude	"Backup RAM/Initialization/Data/Message Art (USA).nem"
 		even
 
 Map_IntUnformattedUSA:
-		incbin	"Backup RAM/Initialization/Data/Message (Internal Unformatted, USA).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Internal Unformatted, USA).eni"
 		even
 
 ; -------------------------------------------------------------------------
@@ -1530,23 +1530,23 @@ Map_IntUnformattedUSA:
 	else
 	
 Art_Message:
-		incbin	"Backup RAM/Initialization/Data/Message Art (English).nem"
+		binclude	"Backup RAM/Initialization/Data/Message Art (English).nem"
 		even
 
 Map_DataCorrupt:
-		incbin	"Backup RAM/Initialization/Data/Message (Data Corrupt, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Data Corrupt, English).eni"
 		even
 	
 Map_IntUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Internal Unformatted, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Internal Unformatted, English).eni"
 		even
 
 Map_CartUnformatted:
-		incbin	"Backup RAM/Initialization/Data/Message (Cart Unformatted, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (Cart Unformatted, English).eni"
 		even
 
 Map_BuRAMFull:
-		incbin	"Backup RAM/Initialization/Data/Message (RAM Full, English).eni"
+		binclude	"Backup RAM/Initialization/Data/Message (RAM Full, English).eni"
 		even
 	
 	endif

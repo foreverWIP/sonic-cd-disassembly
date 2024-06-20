@@ -17,11 +17,11 @@
 	org	WORKRAM
 
 	if REGION=JAPAN
-		incbin	"CD Initial Program/Security/Japan.bin"
+		binclude	"CD Initial Program/Security/Japan.bin"
 	elseif REGION=USA
-		incbin	"CD Initial Program/Security/USA.bin"
+		binclude	"CD Initial Program/Security/USA.bin"
 	else
-		incbin	"CD Initial Program/Security/Europe.bin"
+		binclude	"CD Initial Program/Security/Europe.bin"
 	endif
 
 ; -------------------------------------------------------------------------
@@ -29,7 +29,7 @@
 ; -------------------------------------------------------------------------
 
 	move.l	#VInterrupt,_LEVEL6+2.w		; Set V-INT address
-	move.w	#_LEVEL4,GAUSERHINT		; Set H-INT address
+	move.w	#(_LEVEL4&$FFFF),GAUSERHINT		; Set H-INT address
 	move.l	#HInterrupt,_LEVEL4+2.w
 
 .SendWordRAM:
@@ -59,7 +59,7 @@
 ; -------------------------------------------------------------------------
 
 LoadIPX:
-	obj	WORKRAM+$1000
+	phase	WORKRAM+$1000
 
 	moveq	#SCMD_IPX,d0			; Load IPX file
 	jsr	SubCPUCmd
@@ -93,7 +93,7 @@ LoadIPX:
 
 	jmp	(a0)				; Go to main program
 
-	objend
+	dephase
 LoadIPXEnd:
 
 ; -------------------------------------------------------------------------

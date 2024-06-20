@@ -14,7 +14,7 @@ ObjectLayouts:
 	dc.w	$FFFF, 0, 0, 0
 	
 .Layout:
-	incbin	"Level/Palmtree Panic/Data/Objects (Act 1).bin"
+	binclude	"Level/Palmtree Panic/Data/Objects (Act 1).bin"
 
 .Null:
 	dc.w	$FFFF, 0, 0

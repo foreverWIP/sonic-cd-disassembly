@@ -1289,35 +1289,35 @@ PlanetData:
 ; -------------------------------------------------------------------------
 
 Stamps_Present:
-	incbin	"DA Garden/Data/Stamps (Present).kos"
+	binclude	"DA Garden/Data/Stamps (Present).kos"
 	align	$10
 	
 Stamps_GoodFuture:
-	incbin	"DA Garden/Data/Stamps (Good Future).kos"
+	binclude	"DA Garden/Data/Stamps (Good Future).kos"
 	align	$10
 
 Stamps_BadFuture:
-	incbin	"DA Garden/Data/Stamps (Bad Future).kos"
+	binclude	"DA Garden/Data/Stamps (Bad Future).kos"
 	align	$10
 
 StampMap_Present:
-	incbin	"DA Garden/Data/Stamp Map (Present).bin"
+	binclude	"DA Garden/Data/Stamp Map (Present).bin"
 	even
 	
 StampMap_GoodFuture:
-	incbin	"DA Garden/Data/Stamp Map (Good Future).bin"
+	binclude	"DA Garden/Data/Stamp Map (Good Future).bin"
 	even
 	
 StampMap_BadFuture:
-	incbin	"DA Garden/Data/Stamp Map (Bad Future).bin"
+	binclude	"DA Garden/Data/Stamp Map (Bad Future).bin"
 	even
 	
 Stamps_PresGFAnim:
-	incbin	"DA Garden/Data/Stamps (Animation, Present, Good Future).kos"
+	binclude	"DA Garden/Data/Stamps (Animation, Present, Good Future).kos"
 	align	$10
 	
 Stamps_BadFutAnim:
-	incbin	"DA Garden/Data/Stamps (Animation, Bad Future).kos"
+	binclude	"DA Garden/Data/Stamps (Animation, Bad Future).kos"
 	align	$10
 
 ; -------------------------------------------------------------------------

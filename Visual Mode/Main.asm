@@ -380,7 +380,7 @@ InitMD:
 ; -------------------------------------------------------------------------
 
 Pal_VisualMode:
-	incbin	"Visual Mode/Data/Palette.bin"
+	binclude	"Visual Mode/Data/Palette.bin"
 Pal_VisualModeEnd:
 	even
 
@@ -1671,15 +1671,15 @@ MapSpr_PencilTest:
 ; -------------------------------------------------------------------------
 
 Art_VisModeText:
-	incbin	"Visual Mode/Data/Art (Text).nem"
+	binclude	"Visual Mode/Data/Art (Text).nem"
 	even
 	
 Art_VisModeBG:
-	incbin	"Visual Mode/Data/Art (Background).nem"
+	binclude	"Visual Mode/Data/Art (Background).nem"
 	even
 	
 Map_VisModeBG:
-	incbin	"Visual Mode/Data/Background Mappings.bin"
+	binclude	"Visual Mode/Data/Background Mappings.bin"
 	even
 
 ; -------------------------------------------------------------------------

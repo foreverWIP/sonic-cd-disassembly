@@ -67,7 +67,7 @@ Samp_\name\_Metadata:
 
 SAMPDAT macro name, file
 Samp_\name\:
-	incbin	\file
+	binclude	\file
 Samp_\name\_End:
 	endm
 

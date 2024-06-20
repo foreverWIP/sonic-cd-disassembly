@@ -19,25 +19,25 @@ SprPalCycTable:
 ; -------------------------------------------------------------------------
 
 PalCyc_Sprites0:
-	incbin	"DA Garden/Data/Palette.bin", $40, $20
+	binclude	"DA Garden/Data/Palette.bin", $40, $20
 	even
 
 PalCyc_Sprites1:
-	incbin	"DA Garden/Data/Palette.bin", $40, $18
+	binclude	"DA Garden/Data/Palette.bin", $40, $18
 	dc.w	$EEE, $EE
-	incbin	"DA Garden/Data/Palette.bin", $5C, 4
+	binclude	"DA Garden/Data/Palette.bin", $5C, 4
 	even
 
 ; -------------------------------------------------------------------------
 
 Pal_SelMenu:
-	incbin	"DA Garden/Data/Palette.bin", $60, $20
+	binclude	"DA Garden/Data/Palette.bin", $60, $20
 	even
 
 ; -------------------------------------------------------------------------
 
 Pal_DAGarden:
-	incbin	"DA Garden/Data/Palette.bin"
+	binclude	"DA Garden/Data/Palette.bin"
 Pal_DAGardenEnd:
 	even
 

@@ -137,9 +137,9 @@ PLC_Signpost:
 
 	if ROMHACK=0
 	if REGION=USA
-	incbin	"Level/Wacky Workbench/Data/Padding/1 (Act 1 Present, U).bin"
+	binclude	"Level/Wacky Workbench/Data/Padding/1 (Act 1 Present, U).bin"
 	else
-	incbin	"Level/Wacky Workbench/Data/Padding/1 (Act 1 Present, JE).bin"
+	binclude	"Level/Wacky Workbench/Data/Padding/1 (Act 1 Present, JE).bin"
 	endif
 	else
 	align $10000
@@ -148,7 +148,7 @@ PLC_Signpost:
 ; -------------------------------------------------------------------------
 
 LevelChunks:
-	incbin	"Level/Wacky Workbench/Data/Chunks (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Chunks (Act 1 Present).bin"
 
 ; -------------------------------------------------------------------------
 ; Leftover data from other level files used as padding, can be replaced
@@ -156,7 +156,7 @@ LevelChunks:
 ; -------------------------------------------------------------------------
 
 	if ROMHACK=0
-	incbin	"Level/Wacky Workbench/Data/Padding/2 (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Padding/2 (Act 1 Present).bin"
 	else
 	align $20000
 	endif
@@ -164,7 +164,7 @@ LevelChunks:
 ; -------------------------------------------------------------------------
 
 Art_Sonic:
-	incbin	"Level/Wacky Workbench/Objects/Sonic/Data/Art.bin"
+	binclude	"Level/Wacky Workbench/Objects/Sonic/Data/Art.bin"
 	even
 MapSpr_Sonic:
 	include	"Level/Wacky Workbench/Objects/Sonic/Data/Mappings.asm"
@@ -173,67 +173,67 @@ DPLC_Sonic:
 	include	"Level/Wacky Workbench/Objects/Sonic/Data/DPLCs.asm"
 	even
 Art_Points:
-	incbin	"Level/_Objects/HUD and Points/Data/Art (Points).nem"
+	binclude	"Level/_Objects/HUD and Points/Data/Art (Points).nem"
 	even
 Art_FlowerCapsule:
-	incbin	"Level/_Objects/Level End/Data/Art (Flower Capsule).nem"
+	binclude	"Level/_Objects/Level End/Data/Art (Flower Capsule).nem"
 	even
 Art_BigRing:
-	incbin	"Level/_Objects/Level End/Data/Art (Big Ring).nem"
+	binclude	"Level/_Objects/Level End/Data/Art (Big Ring).nem"
 	even
 Art_GoalPost:
-	incbin	"Level/_Objects/Level End/Data/Art (Goal Post).nem"
+	binclude	"Level/_Objects/Level End/Data/Art (Goal Post).nem"
 	even
 Art_Signpost:
-	incbin	"Level/_Objects/Level End/Data/Art (Signpost).nem"
+	binclude	"Level/_Objects/Level End/Data/Art (Signpost).nem"
 	even
 Art_Results:
-	incbin	"Level/_Objects/Results/Data/Art.nem"
+	binclude	"Level/_Objects/Results/Data/Art.nem"
 	even
 Art_TimeOver:
-	incbin	"Level/_Objects/Game Over/Data/Art (Time Over).nem"
+	binclude	"Level/_Objects/Game Over/Data/Art (Time Over).nem"
 	even
 Art_GameOver:
-	incbin	"Level/_Objects/Game Over/Data/Art (Game Over).nem"
+	binclude	"Level/_Objects/Game Over/Data/Art (Game Over).nem"
 	even
 Art_TitleCard:
-	incbin	"Level/_Objects/Title Card/Data/Art.nem"
+	binclude	"Level/_Objects/Title Card/Data/Art.nem"
 	even
 Art_Shield:
-	incbin	"Level/_Objects/Powerup/Data/Art (Shield).bin"
+	binclude	"Level/_Objects/Powerup/Data/Art (Shield).bin"
 	even
 Art_InvStars:
-	incbin	"Level/_Objects/Powerup/Data/Art (Invincibility Stars).bin"
+	binclude	"Level/_Objects/Powerup/Data/Art (Invincibility Stars).bin"
 	even
 Art_TimeStars:
-	incbin	"Level/_Objects/Powerup/Data/Art (Time Warp Stars).bin"
+	binclude	"Level/_Objects/Powerup/Data/Art (Time Warp Stars).bin"
 	even
 Art_DiagonalSpring:
-	incbin	"Level/_Objects/Spring/Data/Art (Diagonal).nem"
+	binclude	"Level/_Objects/Spring/Data/Art (Diagonal).nem"
 	even
 Art_Springs:
-	incbin	"Level/_Objects/Spring/Data/Art (Normal).nem"
+	binclude	"Level/_Objects/Spring/Data/Art (Normal).nem"
 	even
 Art_MonitorTimePosts:
-	incbin	"Level/_Objects/Monitor and Time Post/Data/Art.nem"
+	binclude	"Level/_Objects/Monitor and Time Post/Data/Art.nem"
 	even
 Art_Explosions:
-	incbin	"Level/_Objects/Explosion/Data/Art.nem"
+	binclude	"Level/_Objects/Explosion/Data/Art.nem"
 	even
 Art_Rings:
-	incbin	"Level/_Objects/Ring/Data/Art.nem"
+	binclude	"Level/_Objects/Ring/Data/Art.nem"
 	even
 Art_LifeIcon:
-	incbin	"Level/_Objects/HUD and Points/Data/Art (Life Icon).bin"
+	binclude	"Level/_Objects/HUD and Points/Data/Art (Life Icon).bin"
 	even
 Art_HUDNumbers:
-	incbin	"Level/_Objects/HUD and Points/Data/Art (Numbers).bin"
+	binclude	"Level/_Objects/HUD and Points/Data/Art (Numbers).bin"
 	even
 Art_HUD:
-	incbin	"Level/_Objects/HUD and Points/Data/Art (HUD).nem"
+	binclude	"Level/_Objects/HUD and Points/Data/Art (HUD).nem"
 	even
 Art_Checkpoint:
-	incbin	"Level/_Objects/Checkpoint/Data/Art.Nem"
+	binclude	"Level/_Objects/Checkpoint/Data/Art.Nem"
 	even
 Ani_Flower:
 	include	"Level/Wacky Workbench/Objects/Flower/Data/Animations.asm"
@@ -242,28 +242,28 @@ MapSpr_Flower:
 	include	"Level/Wacky Workbench/Objects/Flower/Data/Mappings.asm"
 	even
 Art_Flower:
-	incbin	"Level/Wacky Workbench/Objects/Flower/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Flower/Data/Art.nem"
 	even
 Art_TitleCardText:
-	incbin	"Level/Wacky Workbench/Objects/Title Card/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Title Card/Art.nem"
 	even
 Art_ElecSparkOrb:
-	incbin	"Level/Wacky Workbench/Data/Animated Tiles (Electric Spark Orb).bin"
+	binclude	"Level/Wacky Workbench/Data/Animated Tiles (Electric Spark Orb).bin"
 	even
 Art_ElectricSparks:
-	incbin	"Level/Wacky Workbench/Data/Animated Tiles (Electric Sparks).bin"
+	binclude	"Level/Wacky Workbench/Data/Animated Tiles (Electric Sparks).bin"
 	even
 Art_Siren:
-	incbin	"Level/Wacky Workbench/Data/Animated Tiles (Siren).bin"
+	binclude	"Level/Wacky Workbench/Data/Animated Tiles (Siren).bin"
 	even
 Art_Launcher:
-	incbin	"Level/Wacky Workbench/Objects/Launcher/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Launcher/Data/Art.nem"
 	even
 Art_Freezer:
-	incbin	"Level/Wacky Workbench/Objects/Freezer/Data/Art (Freezer).nem"
+	binclude	"Level/Wacky Workbench/Objects/Freezer/Data/Art (Freezer).nem"
 	even
 Art_IceBlock:
-	incbin	"Level/Wacky Workbench/Objects/Freezer/Data/Art (Ice Block).nem"
+	binclude	"Level/Wacky Workbench/Objects/Freezer/Data/Art (Ice Block).nem"
 	even
 
 ; -------------------------------------------------------------------------
@@ -271,16 +271,16 @@ Art_IceBlock:
 ; -------------------------------------------------------------------------
 
 ColAngleMap:
-	incbin	"Level/_Data/Collision Angles.bin"
+	binclude	"Level/_Data/Collision Angles.bin"
 	even
 ColHeightMap:
-	incbin	"Level/_Data/Collision Height Map.bin"
+	binclude	"Level/_Data/Collision Height Map.bin"
 	even
 ColWidthMap:
-	incbin	"Level/_Data/Collision Width Map.bin"
+	binclude	"Level/_Data/Collision Width Map.bin"
 	even
 LevelCollision:
-	incbin	"Level/Wacky Workbench/Data/Collision (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Collision (Act 1 Present).bin"
 	even
 
 ; -------------------------------------------------------------------------
@@ -302,20 +302,20 @@ LevelLayouts:
 	dc.w	.Null4-LevelLayouts, .Null4-LevelLayouts, .Null4-LevelLayouts
 
 .FG:
-	incbin	"Level/Wacky Workbench/Data/Foreground (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Foreground (Act 1 Present).bin"
 	even
 .BG:
-	incbin	"Level/Wacky Workbench/Data/Background (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Background (Act 1 Present).bin"
 	even
 .Null:
 	dc.b	0, 0, 0, 0
 .FG2:
-	incbin	"Level/_Data/Unused/Unknown Layout 1.bin"
+	binclude	"Level/_Data/Unused/Unknown Layout 1.bin"
 	even
 .Null2:
 	dc.b	0, 0, 0, 0
 .FG3:
-	incbin	"Level/_Data/Unused/Unknown Layout 2.bin"
+	binclude	"Level/_Data/Unused/Unknown Layout 2.bin"
 	even
 .Null3:
 	dc.b	0, 0, 0, 0
@@ -325,10 +325,10 @@ LevelLayouts:
 ; -------------------------------------------------------------------------
 
 LevelBlocks:
-	incbin	"Level/Wacky Workbench/Data/Blocks (Act 1 Present).nem"
+	binclude	"Level/Wacky Workbench/Data/Blocks (Act 1 Present).nem"
 	even
 Art_LevelTiles:
-	incbin	"Level/Wacky Workbench/Data/Tiles (Act 1 Present).nem"
+	binclude	"Level/Wacky Workbench/Data/Tiles (Act 1 Present).nem"
 	even
 Ani_Powerup:
 	include	"Level/_Objects/Powerup/Data/Animations.asm"
@@ -361,7 +361,7 @@ MapSpr_Explosion:
 	include	"Level/_Objects/Explosion/Data/Mappings.asm"
 	even
 
-	incbin	"Level/_Data/Unused/Unknown Data.bin"
+	binclude	"Level/_Data/Unused/Unknown Data.bin"
 	even
 
 Ani_Checkpoint:
@@ -389,91 +389,91 @@ MapSpr_FlowerCapsule:
 	include	"Level/_Objects/Level End/Data/Mappings (Flower Capsule).asm"
 	even
 Art_Piston:
-	incbin	"Level/Wacky Workbench/Objects/Piston/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Piston/Data/Art.nem"
 	even
 Art_PlatformPresent:
-	incbin	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Present).nem"
+	binclude	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Present).nem"
 	even
 Art_PlatformPast:
-	incbin	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Past).nem"
+	binclude	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Past).nem"
 	even
 Art_PlatformFuture:
-	incbin	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Future).nem"
+	binclude	"Level/Wacky Workbench/Objects/Platform/Data/Art (Normal, Future).nem"
 	even
 Art_BouncePlatform:
-	incbin	"Level/Wacky Workbench/Objects/Platform/Data/Art (Bounce).nem"
+	binclude	"Level/Wacky Workbench/Objects/Platform/Data/Art (Bounce).nem"
 	even
 Art_Switch:
-	incbin	"Level/Wacky Workbench/Objects/Switch/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Switch/Data/Art.nem"
 	even
 Art_Door:
-	incbin	"Level/Wacky Workbench/Objects/Door/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Door/Data/Art.nem"
 	even
 Art_BossDoor:
-	incbin	"Level/Wacky Workbench/Objects/Boss/Data/Art (Door).nem"
+	binclude	"Level/Wacky Workbench/Objects/Boss/Data/Art (Door).nem"
 	even
 Art_Crusher:
-	incbin	"Level/Wacky Workbench/Objects/Crusher/Data/Art (Normal).nem"
+	binclude	"Level/Wacky Workbench/Objects/Crusher/Data/Art (Normal).nem"
 	even
 Art_CrusherGoodFuture:
-	incbin	"Level/Wacky Workbench/Objects/Crusher/Data/Art (Good Future).nem"
+	binclude	"Level/Wacky Workbench/Objects/Crusher/Data/Art (Good Future).nem"
 	even
 Art_TubeDoor:
-	incbin	"Level/Wacky Workbench/Objects/Tube Door/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Tube Door/Data/Art.nem"
 	even
 Art_ElecOrbPresent:
-	incbin	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Present).nem"
+	binclude	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Present).nem"
 	even
 Art_ElecOrbPast:
-	incbin	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Past).nem"
+	binclude	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Past).nem"
 	even
 Art_ElecOrbGoodFuture:
-	incbin	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Good Future).nem"
+	binclude	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Good Future).nem"
 	even
 Art_ElecOrbBadFuture:
-	incbin	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Bad Future).nem"
+	binclude	"Level/Wacky Workbench/Objects/Electric Beams/Data/Art (Orb, Bad Future).nem"
 	even
 Art_BataPyon:
-	incbin	"Level/Wacky Workbench/Objects/Bata-pyon/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Bata-pyon/Data/Art.nem"
 	even
 Art_PohBee:
-	incbin	"Level/Wacky Workbench/Objects/Poh-Bee/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Poh-Bee/Data/Art.nem"
 	even
 Art_Minomusi:
-	incbin	"Level/Wacky Workbench/Objects/Minomusi/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Minomusi/Data/Art.nem"
 	even
 Art_MinomusiBomb:
-	incbin	"Level/Wacky Workbench/Objects/Minomusi/Data/Art (Bomb).nem"
+	binclude	"Level/Wacky Workbench/Objects/Minomusi/Data/Art (Bomb).nem"
 	even
 Art_SnakeBlock:
-	incbin	"Level/Wacky Workbench/Objects/Snake Blocks/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Snake Blocks/Data/Art.nem"
 	even
 Art_Semi:
-	incbin	"Level/Wacky Workbench/Objects/Semi/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Semi/Data/Art.nem"
 	even
 Art_Seesaw:
-	incbin	"Level/Wacky Workbench/Objects/Seesaw/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Seesaw/Data/Art.nem"
 	even
 Art_EggmanStatue:
-	incbin	"Level/Wacky Workbench/Objects/Eggman Statue/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Eggman Statue/Data/Art.nem"
 	even
 Art_SpikeBall:
-	incbin	"Level/Wacky Workbench/Objects/Spike Ball/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Spike Ball/Data/Art.nem"
 	even
 Art_Animals:
-	incbin	"Level/Wacky Workbench/Objects/Animal/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Animal/Data/Art.nem"
 	even
 Art_ProjAnimals:
-	incbin	"Level/Wacky Workbench/Objects/Projector/Data/Art (Animals).nem"
+	binclude	"Level/Wacky Workbench/Objects/Projector/Data/Art (Animals).nem"
 	even
 Art_RobotGenWithered:
-	incbin	"Level/_Objects/Robot Generator/Data/Art (Withered).nem"
+	binclude	"Level/_Objects/Robot Generator/Data/Art (Withered).nem"
 	even
 Art_RobotGenerator:
-	incbin	"Level/_Objects/Robot Generator/Data/Art.nem"
+	binclude	"Level/_Objects/Robot Generator/Data/Art.nem"
 	even
 Art_Projector:
-	incbin	"Level/Wacky Workbench/Objects/Projector/Data/Art.nem"
+	binclude	"Level/Wacky Workbench/Objects/Projector/Data/Art.nem"
 	even
 
 ; -------------------------------------------------------------------------
@@ -482,7 +482,7 @@ Art_Projector:
 ; -------------------------------------------------------------------------
 
 	if ROMHACK=0
-	incbin	"Level/Wacky Workbench/Data/Padding/3 (Act 1 Present).bin"
+	binclude	"Level/Wacky Workbench/Data/Padding/3 (Act 1 Present).bin"
 	else
 	align $40000
 	endif

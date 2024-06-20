@@ -561,7 +561,7 @@ InitMD:
 ; -------------------------------------------------------------------------
 
 Pal_OpenFMV:
-	incbin	"FMV/Data/Palette (Opening).bin"
+	binclude	"FMV/Data/Palette (Opening).bin"
 Pal_OpenFMVEnd:
 	even
 
@@ -810,11 +810,11 @@ VInt_LoadFrameWork:
 ; -------------------------------------------------------------------------
 
 Art_Border:
-	incbin	"FMV/Data/Art (Border, Opening).bin"
+	binclude	"FMV/Data/Art (Border, Opening).bin"
 	even
 	
 Map_Border:
-	incbin	"FMV/Data/Border Mappings (Opening).bin"
+	binclude	"FMV/Data/Border Mappings (Opening).bin"
 	even
 	
 ; -------------------------------------------------------------------------

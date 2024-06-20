@@ -678,11 +678,11 @@ LoadCloudsData:
 ; -------------------------------------------------------------------------
 
 Stamps_Clouds:
-	incbin	"Title Screen/Data/Cloud Stamps.kos"
+	binclude	"Title Screen/Data/Cloud Stamps.kos"
 	even
 
 StampMap_Clouds:
-	incbin	"Title Screen/Data/Cloud Stamp Map.kos"
+	binclude	"Title Screen/Data/Cloud Stamp Map.kos"
 	even
 
 ; -------------------------------------------------------------------------

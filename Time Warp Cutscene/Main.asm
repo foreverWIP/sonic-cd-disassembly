@@ -593,16 +593,16 @@ VDPRegsEnd:
 	even
 	
 Pal_TimeWarp:
-	incbin	"Time Warp Cutscene/Data/Palette.bin"
+	binclude	"Time Warp Cutscene/Data/Palette.bin"
 Pal_TimeWarp_End:
 	even
 	
 Art_TimeWarp:
-	incbin	"Time Warp Cutscene/Data/Art.nem"
+	binclude	"Time Warp Cutscene/Data/Art.nem"
 	even
 	
 Map_TimeWarpBg:
-	incbin	"Time Warp Cutscene/Data/Background Mappings.bin"
+	binclude	"Time Warp Cutscene/Data/Background Mappings.bin"
 	even
 
 ; -------------------------------------------------------------------------
